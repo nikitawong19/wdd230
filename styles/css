@@ -35,8 +35,3 @@ footer {
 .last-updated {
     display: block;
 }
-
-/* .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
