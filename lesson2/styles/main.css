@@ -1,0 +1,76 @@
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    justify-content: center;
+    margin: 15px;
+}
+
+header, footer {
+    background-color: #2e2e2e;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 15px;
+}
+
+h1, h2, p {
+    margin: 0px;
+}
+
+/* ---------- phone or baseline view ---------- */
+
+main {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+section {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.section1 {
+    background-color: lightblue;
+}
+
+.section2 {
+    background-color: lightpink;
+}
+
+.section3 {
+    background-color: lightgrey;
+}
+
+picture {
+
+    max-width: 100%;
+}
+
+/* ---------- tablet view ---------- */
+@media only screen and (min-width: 37.5em) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    main section:nth-child(3) {
+        grid-column: span 2;
+    }
+}
+
+/* ---------- desktop view ---------- */
+@media only screen and (min-width: 1028px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    main section:nth-child(3) {
+        grid-column: span 1;
+    }
+}
+
