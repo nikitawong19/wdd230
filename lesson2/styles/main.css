@@ -22,7 +22,6 @@ h1, h2, p {
 }
 
 /* ---------- phone or baseline view ---------- */
-
 main {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -48,7 +47,6 @@ section {
 }
 
 picture {
-
     max-width: 100%;
 }
 
