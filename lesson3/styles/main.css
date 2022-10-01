@@ -15,8 +15,8 @@ header, footer {
     background-color: black;
     color: white;
     display: flex;
-    flex-direction: column;
-    /* text-align: center; */
+    flex-flow: column;
+    text-align: center;
     align-items: center;
     justify-content: center;
     padding: 15px;
@@ -45,6 +45,7 @@ nav {
 
 nav ul {
     display: flex;
+    flex-direction: column;
 }
 
 nav ul li {
@@ -82,17 +83,14 @@ footer {
 
 
 
-/* media queries for medium view */
+/* ---------- media queries for medium view ----------*/
 /* 35em is also 560px (if basefont is 16px) */
 @media only screen and (min-width: 35rem) {
 
 /* ---------- navigation ---------- */
 nav ul {
     display: flex;
+    flex-direction: row;
     margin-left: 2%;
 }
-
-nav ul li a{padding: .5rem 1rem;}
-
 }
-/* end of media queries for medium view */
