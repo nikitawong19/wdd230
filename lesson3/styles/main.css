@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ---------- body ---------- */
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- header ---------- */
+header, footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.headings {
+    display: flex;
+    flex-direction: column;
+}
+
+h2, p, picture {
+    padding: 15px;
+}
+
+/* ---------- navigation ---------- */
+nav { 
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    list-style-type: none; /* remove the bullet */
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none; /* remove underline */
+    padding: 15px;
+    color: white;
+}
+
+nav ul li a:hover {
+    border-bottom: 3px solid white;
+}
+
+/* ---------- main ---------- */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+/* ---------- footer ---------- */
+footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* media queries for medium view */
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+/* ---------- navigation ---------- */
+nav ul {
+    display: flex;
+    margin-left: 2%;
+}
+
+nav ul li a{padding: .5rem 1rem;}
+
+}
+/* end of media queries for medium view */
