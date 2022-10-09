@@ -7,14 +7,23 @@
 /* ---------- body ---------- */
 body {
     margin: 15px;
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Roboto', sans-serif;
 }
 
 /* ---------- header ---------- */
+
+header, nav, main, footer {
+    max-width: 960px;
+    margin: 15px auto;
+}
+
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* move the social icon to the right */
+    padding: 15px;
+    background-color: black;
+    color: white;
 }
 
 .logo {
@@ -25,7 +34,7 @@ h1 {
     margin: 0;
 }
 
-.social {
+.socialIcon {
     display: flex;
 }
 
@@ -41,6 +50,7 @@ h1 {
 /* ---------- navigation ---------- */
 /* .2rem to move it down for top & bottom */
 /* 2vw is to remove away from the edge of the page */
+/* 2vw unit means the "viewport width". That way the size will follow the size of the browser window. */
 nav button {
     margin: .2rem 2vw;
     background: transparent;
@@ -107,13 +117,12 @@ nav ul.open {
 }
 
 .date {
-    font-family: 'Roboto';
     text-align: center;
-	justify-content: center;
-    margin: 0.5rem auto;
+    margin: 15px auto;
 	border: 1px solid #bbb;
 	padding: 0.75rem;
 	background-color: #eee;
+    max-width: 960px;
 }
 
 /* ---------- picture ---------- */
@@ -124,10 +133,6 @@ img {
 }
 
 /* ---------- main ---------- */
-main {
-    margin: 15px 2vw;
-}
-
 .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -168,9 +173,24 @@ main {
 
 /* ---------- footer ---------- */
 footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     background-color: black;
     color: white;
+}
+
+footer a {
+    color: white;
+}
+
+.part1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
     padding: 15px;
+}
+
+.copyright {
+    text-align: center;
+    padding: 15px;
+    border-top: 0.5px solid white;
 }
