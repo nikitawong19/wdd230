@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,11 +15,61 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <h1>This is Test</h1>
+        <div class="logo">
+            <img src="chamber/images/Malaysia-Chamber-of-Commerce.png" alt="image Malaysia Chamber of Commerce">
+            <div class="heading">
+                <h1>Malaysia</h1>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/"><img class="facebookLogo" src="chamber/images/facebook-icon.svg"
+                    alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/"><img class="linkedinLogo" src="chamber/images/linkedin-icon.svg"
+                    alt="linkedin logo"></a>
+        </div>
     </header>
-    <main></main>
-    <footer></footer>
+    <div class="date"></div>
+    <nav>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <ul id="navigation">
+            <li><a href="#">Discovery</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <p>Event</p>
+        <p>Weather</p>
+        <p>Join</p>
+        <p>Hero with site name and call to action</p>
+        <p>New release</p>
+        <p>Spotlight 1</p>
+        <p>Spotlight 2</p>
+        <p>Spotlight 3</p>
+    </main>
+    <footer>
+        <div class="footer">
+            <img src="chamber/images/Malaysia-Chamber-of-Commerce.png" alt="image malaysia chamber of commerce">
+            <p>Malaysia Chamber of Commerce</p>
+            <p>15 A, Jalan Rejang 8, <br>Taman Setapak Jaya<br>53300 Kuala Lumpur.</p>
+            <div class="contactInfo">
+                <p>malaysiachamber.com</p>
+                <p>60-126521214</p>
+                <p><a href="https://www.google.com/maps/place">
+                        <iconify-icon icon="ic:baseline-pin-drop"></iconify-icon> Location Map
+                    </a></p>
+            </div>
+            <p>&copy; <span class="copyright"> 2022 Malaysia Chamber of Commerce</span> | Nikita Wong | WDD 230 Project
+                | <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="chamber/scripts/function.js"></script>
 </body>
+
 </html>

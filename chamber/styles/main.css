@@ -1,5 +1,142 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ---------- body ---------- */
 body {
-    font-size: 18px;
-    line-height: 1.5;
+    margin: 15px;
+    font-size: 16px;
     font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- header ---------- */
+header {
+    display: flex;
+    justify-content: space-between
+}
+
+.logo {
+    display: flex;
+}
+
+h1 {
+    margin: 0;
+}
+
+.social {
+    display: flex;
+}
+
+.facebookLogo, .linkedinLogo {
+    min-width: 30px;
+    max-width: 30px;
+}
+
+.heading {
+    margin-left: 15px;
+}
+
+/* ---------- navigation ---------- */
+/* .2rem to move it down for top & bottom */
+/* 2vw is to remove away from the edge of the page */
+nav button {
+    margin: .2rem 2vw;
+    background: transparent;
+    border: none; /* remove border line of the hamburger */
+    font-size: 32px; /* increase the thickness of the line */
+}
+
+nav {
+    background-color: #eee; /* gray color */
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+/* style menu item */
+nav ul li a {
+    display: block; /* to make the entire width clickable */
+    padding: 15px 2vw; /* make the clickable area bigger. 2vw is to align all the items to the left */
+    text-decoration: none; /* remove underline */
+    color: #333; /* change the text color */
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.3); 
+    color: white;
+}
+
+/* by default menu item in small screen should be hidden */
+nav ul {
+    display: none;
+}
+
+/* when open the menu item it will display as block */
+nav ul.open {
+    display: block;
+}
+
+/* when the menu is open, and the screen is wider, it still stack until refresh browser which is not right. */
+/* so please go to medium screen, select the nav ul and add #navigation next to it then it will work properly. */
+/* this is because when css assign to an id is more powerful than css assign to a class. */
+/* That's why we add id to medium css and to overrule the small screen class. */
+
+/* ---------- Responsive Navigation - Enhancing with a Close X ----------*/
+/* by default the hamburger which is the first span child to display as a bloack */
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+/* the second span child which is X to be hidden */
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+/* when the hamburger with the class is open, the first span child the hamburger to be hidden */
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+/* the second span child the X to display as a block */
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+.date {
+    font-family: 'Roboto';
+    text-align: center;
+	justify-content: center;
+    margin: 0.5rem auto;
+	border: 1px solid #bbb;
+	padding: 0.75rem;
+	background-color: #eee;
+}
+
+/* ---------- picture ---------- */
+img {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* ---------- main ---------- */
+main {
+    margin: 15px 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    border: 1px solid #bbb;
+}
+
+/* ---------- footer ---------- */
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: white;
+    padding: 15px;
 }

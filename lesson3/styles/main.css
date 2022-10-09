@@ -12,7 +12,7 @@ body {
 
 /* ---------- header ---------- */
 header, footer {
-    background-color: black;
+    background-color: gray;
     color: white;
     display: flex;
     flex-flow: column;
