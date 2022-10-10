@@ -1,7 +1,7 @@
 /* ---------- media query for medium view ----------*/
 @media only screen and (min-width: 32.5em) {
 /* get rid of the hamburger icon when in medium screen */
-nav button {
+#hamburgerBtn {
     display: none;
 }
 
@@ -11,6 +11,8 @@ nav ul#navigation {
     justify-content: flex-start; /* to move right use "flex-end" */
 }
 
-
+nav ul li {
+    display: block;
+}
 
 } /* end of medium view */

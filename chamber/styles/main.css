@@ -19,11 +19,11 @@ header, nav, main, footer {
 }
 
 header {
-    display: flex;
-    justify-content: space-between; /* move the social icon to the right */
     padding: 15px;
     background-color: black;
     color: white;
+    align-items:flex-start;
+    grid-template-rows: 1fr 1fr;
 }
 
 .logo {
@@ -47,11 +47,16 @@ h1 {
     margin-left: 15px;
 }
 
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 /* ---------- navigation ---------- */
 /* .2rem to move it down for top & bottom */
 /* 2vw is to remove away from the edge of the page */
 /* 2vw unit means the "viewport width". That way the size will follow the size of the browser window. */
-nav button {
+#hamburgerBtn {
     margin: .2rem 2vw;
     background: transparent;
     border: none; /* remove border line of the hamburger */
@@ -81,12 +86,17 @@ nav ul li a:hover {
 }
 
 /* by default menu item in small screen should be hidden */
-nav ul {
+nav ul li {
     display: none;
 }
 
 /* when open the menu item it will display as block */
-nav ul.open {
+#hamburgerBtn {
+    display: block;
+    background-color: white;
+}
+
+nav ul.open li {
     display: block;
 }
 
@@ -123,6 +133,8 @@ nav ul.open {
 	padding: 0.75rem;
 	background-color: #eee;
     max-width: 960px;
+    width: 100%;
+    color: black;
 }
 
 /* ---------- picture ---------- */
