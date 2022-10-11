@@ -1,8 +1,14 @@
 /* ---------- media query for medium view ----------*/
 @media only screen and (min-width: 32.5em) {
+
 /* get rid of the hamburger icon when in medium screen */
 #hamburgerBtn {
     display: none;
+}
+
+nav {
+    grid-row: 1;
+    grid-column: 2 / 3;
 }
 
 /* display side by side when in medium screen instead of block*/
@@ -13,6 +19,31 @@ nav ul#navigation {
 
 nav ul li {
     display: block;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.date {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+}
+
+.socialIcon {
+    grid-column: 3 / 4;
+}
+
+
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
 }
 
 } /* end of medium view */
