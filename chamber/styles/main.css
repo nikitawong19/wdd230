@@ -156,7 +156,7 @@ nav ul.open li {
 }
 
 /* ---------- picture ---------- */
-img {
+header div img {
     width: 70px;
     height: auto;
     border-radius: 10px;
@@ -172,8 +172,121 @@ img {
 
 .main div {
     flex: 1;
-    border: 1px solid #bbb;
+    /* border: 1px solid #bbb; */
+    background-color: #eee;
+}
+
+main div img {
+    width: 100%;
+    height: auto;
+}
+
+main div .label {
+    color: maroon;
+    font-weight: bold;
+}
+
+/* ---------- hero box ---------- */
+.heroBox {
+    position: relative;
+}
+
+.heroBox p {
+    font-weight: bold;
+}
+
+.welcome {
+    position: absolute;
+    top: 25%;
+    left: 21%;
+    color: white;
+    text-shadow: .25rem .25rem .75rem #333;
+}
+
+.join {
+    position: absolute;
+    top: 33%;
+    left: 28%;
+    background-color: black;
+    color: white;
+	padding: 15px 20px;
+    border-radius: 25px;
+}
+
+/* ---------- event ---------- */
+.eventBox {
     padding: 15px;
+}
+
+.eventBox p {
+    margin-top: 10px;
+}
+
+/* ---------- weather box ---------- */
+.weatherBox {
+    padding: 15px;
+}
+
+.weatherBox img {
+    width: 50%;
+}
+
+/* ---------- news box---------- */
+.newsBox h2 {
+    padding: 15px;
+}
+
+.newsBox p {
+    padding: 15px;
+    color: grey;
+}
+
+/* ---------- join us box ---------- */
+.joinUsBox {
+    padding: 15px;
+}
+
+.joinUs {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.joinUsBox p {
+    padding-top: 15px;
+}
+
+/* ---------- spotlight 1 ---------- */
+.spotlight1 h2 {
+    padding: 15px;
+}
+
+.spotlight1 p {
+    padding: 15px;
+    color: grey;
+}
+
+/* ---------- spotlight 2 ---------- */
+.spotlight2 h2 {
+    padding: 15px;
+}
+
+.spotlight2 p {
+    padding: 15px;
+    color: grey;
+}
+
+/* ---------- spotlight 3 ---------- */
+.spotlight3 h2 {
+    padding: 15px;
+}
+
+.spotlight3 p {
+    padding: 15px;
+    color: grey;
 }
 
 /* ---------- footer ---------- */
@@ -192,6 +305,12 @@ footer a {
     text-align: center;
     justify-items: center;
     padding: 15px;
+}
+
+footer div img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
 }
 
 .copyright {
