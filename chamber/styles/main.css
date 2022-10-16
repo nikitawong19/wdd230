@@ -21,7 +21,7 @@ header, main, footer {
 
 header {
     padding: 15px;
-    background-color: black;
+    background-color: #111;
     color: white;
     display: grid;
     /* align-items:flex-start; */
@@ -84,7 +84,6 @@ header .heading p {
 }
 
 nav {
-    background-color: #eee; /* gray color */
     margin-top: 15px;
     grid-row: 2;
     grid-column: 1 / 4;
@@ -99,11 +98,12 @@ nav ul li a {
     display: block; /* to make the entire width clickable */
     padding: 15px 2vw; /* make the clickable area bigger. 2vw is to align all the items to the left */
     text-decoration: none; /* remove underline */
-    color: #333; /* change the text color */
+    color: white; /* change the text color */
 }
 
 nav ul li a:hover {
-    background-color: rgba(0, 0, 0, 0.3); 
+    /* background-color: rgba(0, 0, 0, 0.3);  */
+    background-color: #4D4D4D;
     color: white;
 }
 
@@ -153,6 +153,11 @@ nav ul.open li {
     grid-column: 1 / 4;
     /* margin: 2rem 0; */
     margin-top: 15px;
+}
+
+/* change the default italic font style to normal */
+em {
+    font-style: normal;
 }
 
 /* ---------- picture ---------- */
@@ -238,7 +243,7 @@ main div .label {
 
 .newsBox p {
     padding: 15px;
-    color: grey;
+    color: black;
 }
 
 /* ---------- join us box ---------- */
@@ -266,7 +271,7 @@ main div .label {
 
 .spotlight1 p {
     padding: 15px;
-    color: grey;
+    color: black;
 }
 
 /* ---------- spotlight 2 ---------- */
@@ -276,7 +281,7 @@ main div .label {
 
 .spotlight2 p {
     padding: 15px;
-    color: grey;
+    color: black;
 }
 
 /* ---------- spotlight 3 ---------- */
@@ -286,12 +291,12 @@ main div .label {
 
 .spotlight3 p {
     padding: 15px;
-    color: grey;
+    color: black;
 }
 
 /* ---------- footer ---------- */
 footer {
-    background-color: black;
+    background-color: #111;
     color: white;
 }
 
