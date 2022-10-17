@@ -46,6 +46,12 @@
         margin-top: 15px;
     }
 
+    .specialMsg {
+        grid-column: 1 / 4;
+        text-align: center;
+        padding-top: 12px;
+    }
+    
     /* ---------- main ---------- */
     .main {
         display: grid;
