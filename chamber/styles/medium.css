@@ -1,6 +1,6 @@
 /* ---------- media query for medium view ----------*/
 /* 32.5em is also 520px when basefont is 16px */
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 32em) {
     
     /* ---------- header ---------- */
     header {
@@ -58,15 +58,14 @@
     .welcome {
         position: absolute;
         top: 35%;
-        left: 34%;
-        color: whitesmoke;
-        text-shadow: .25rem .25rem .75rem white;
+        left: 35%;
+        color: black;
     }
     
     .join {
         position: absolute;
-        top: 40%;
-        left: 38%;
+        top: 41%;
+        left: 40%;
         background-color: black;
         color: white;
         padding: 15px 20px;

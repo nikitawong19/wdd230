@@ -205,14 +205,15 @@ main div .label {
 .welcome {
     position: absolute;
     top: 30%;
-    left: 21%;
-    color: whitesmoke;
-    text-shadow: .25rem .25rem .75rem white;
+    left: 17%;
+    color: black;
+    background-color: white;
+    padding: 10px;
 }
 
 .join {
     position: absolute;
-    top: 40%;
+    top: 41%;
     left: 28%;
     background-color: black;
     color: white;
