@@ -1,6 +1,6 @@
 /* ---------- media query for medium view ----------*/
 /* 32.5em is also 520px when basefont is 16px */
-@media only screen and (min-width: 32em) {
+@media only screen and (min-width: 32.5em) {
     
     /* ---------- header ---------- */
     header {
@@ -43,7 +43,7 @@
     }
 
     /* ---------- main ---------- */
-    .main {
+    main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;

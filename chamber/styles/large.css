@@ -52,7 +52,7 @@
     }
     
     /* ---------- main ---------- */
-    .main {
+    main {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 10px;
@@ -113,10 +113,6 @@
         align-self: center;
     }
 
-    hr {
-        align-self: center;
-    }
-
     /* ---------- join us box ---------- */
     .joinUsBox {
         grid-column: 1 / 2;
@@ -140,6 +136,10 @@
         display: block;
         grid-column: 4 / 5;
         grid-row: 3 / 4;
+    }
+
+    .spotlight3 p {
+        padding: 0 15px 15px;
     }
 
     /* ---------- footer ----------*/

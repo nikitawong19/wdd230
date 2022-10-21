@@ -22,7 +22,7 @@
         <div id="container">
             <div class="logo">
                 <figure class="logo">
-                    <img src="chamber/images/world.png" alt="logo">
+                    <img src="chamber/images/logo.webp" alt="logo">
                 </figure>
                 <div class="heading">
                     <h1>Malaysia</h1>
@@ -45,95 +45,85 @@
         </nav>
         <div class="date"></div>
         <div class="reminder"></div>
-        
     </header>
     <main>
-        <div class="main">
-            <div class="heroBox">
-                <figure>
-                    <picture class="heroImg">
-                        <!-- <source media="(max-width: 300px)" srcset="chamber/images/office300.webp">
-                        <source media="(max-width: 500px)" srcset="chamber/images/office500.webp">
-                        <source media="(max-width: 700px)" srcset="chamber/images/office700.webp">
-                        <source media="(max-width: 900px)" srcset="chamber/images/office900.webp"> -->
-                        <img src="chamber/images/klcc.webp" alt="Petronas twin tower image">
-                    </picture>
-                </figure>
-                <h2 class="welcome">Welcome to Malaysia</h2>
-                <p class="join">Join the Chamber</p>
-            </div>
+        <div class="heroBox">
+            <picture class="heroImg">
+                <source media="(max-width: 300px)" srcset="chamber/images/office300.webp">
+                <source media="(max-width: 500px)" srcset="chamber/images/office500.webp">
+                <source media="(max-width: 700px)" srcset="chamber/images/office700.webp">
+                <source media="(max-width: 900px)" srcset="chamber/images/office900.webp">
+                <img src="chamber/images/office1100.webp" alt="Petronas twin tower image">
+                <!-- <img src="chamber/images/klcc.webp" alt="Petronas twin tower image"> -->
+            </picture>
             
-            <div class="eventBox">
-                <h2>Webinar Session</h2>
-                <p>Adopting E-signature policy for your organisation</p>
-                <p>Come and join us on Saturday, 15 October 2022 at 2:00 pm.</p>
-            </div>
+            <!-- <h2 class="welcome">Welcome to Malaysia</h2>
+            <p class="join">Join the Chamber</p> -->
+        </div>
+        
+        <div class="eventBox">
+            <h2>Webinar Session</h2>
+            <p>Adopting E-signature policy for your organisation</p>
+            <p>Come and join us on Saturday, 15 October 2022 at 2:00 pm.</p>
+        </div>
 
-            <div class="weatherBox">
-                <h2>Weather</h2>
-                <picture class="weatherImg">
-                    <img src="chamber/images/sunny.webp" alt="sun behind cloud">
-                </picture>
-                <p class="temperature">51<span>&#8457;</span></p>
-                <p class="forecast">Partly Sunny<p>
-                <hr>
-                <table>
-                    <tr>
-                        <td>Wind Speed:</td>
-                        <td>2.0 m/h</td>
-                    </tr>
-                    <tr>
-                        <td>Wind Chill:</td>
-                        <td class="windChill"></td>
-                    </tr>
-                </table>
-            </div>
+        <div class="weatherBox">
+            <h2>Weather</h2>
+            <img src="chamber/images/sunny.webp" alt="sun behind cloud">
+            <p class="temperature">
+                <span class="currentTemp">50</span>
+                <span>&#8457;</span>
+            </p>
+            <p class="forecast">Partly Sunny</p>
+            <hr>
+            <table>
+                <tr>
+                    <td>Wind Speed:</td>
+                    <td><span class="currentWind">9.0</span> km/h</td>
+                </tr>
+                <tr>
+                    <td>Wind Chill:</td>
+                    <td class="windChillCell"> <span>&#8457;</span></td>
+                </tr>
+            </table>
+        </div>
 
-            <div class="joinUsBox">
-                <p class="joinUs">Join Us!</p>
-                <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
-            </div>
+        <div class="joinUsBox">
+            <p class="joinUs">Join Us!</p>
+            <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+        </div>
 
-            <div class="newsBox">
-                <picture>
-                    <img src="chamber/images/resize-money-matters.webp" alt="Director of Malaysia Chamber of Commerce on TV3">
-                </picture>
-                <p class="label">NEWS</p>
-                <h2><a href="https://www.micci.com/NewsDetail.aspx?NewsId=755">Malaysia Chamber of Commerce's Executive Director responded to budget 2023 on TV3-Money Matters</a></h2>
-                <p>By marcom@micci.com</p>
-            </div>
-            
-            <div class="spotlight1">
-                <picture>
-                    <img src="chamber/images/resize-investment.webp" alt="check shares">
-                </picture>
-                <p class="label">INTERNATIONAL</p>
-                <h2><a href="https://www.nst.com.my/business/2022/09/827902/malaysia-attracted-rm1233bil-investments-1h-2022">Malaysia attracted RM123.3bil in investments for 1H 2022</a></h2>
-                <p>By Asila Jalil</p>
-            </div>
+        <div class="newsBox">
+            <!-- <img src="chamber/images/resize-money-matters.webp" alt="Director of Malaysia Chamber of Commerce on TV3"> -->
+            <p class="label">NEWS</p>
+            <p><a href="https://www.micci.com/NewsDetail.aspx?NewsId=755">Malaysia Chamber of Commerce's Executive Director responded to budget 2023 on TV3-Money Matters</a></p>
+            <p>By marcom@micci.com</p>
+        </div>
+        
+        <div class="spotlight1">
+            <img src="chamber/images/resize-investment.webp" alt="check shares">
+            <p class="label">INTERNATIONAL</p>
+            <p><a href="https://www.nst.com.my/business/2022/09/827902/malaysia-attracted-rm1233bil-investments-1h-2022">Malaysia attracted RM123.3bil in investments for 1H 2022</a></p>
+            <p>By Asila Jalil</p>
+        </div>
 
-            <div class="spotlight2">
-                <picture>
-                    <img src="chamber/images/resize-shopping-mall.webp" alt="shopping mall">
-                </picture>
-                <p class="label">INTERNATIONAL</p>
-                <h2><a href="https://www.theedgemarkets.com/article/inflation-seen-33-2022-2833-2023">The effect of OPR hikes on small businesses</a></h2>
-                <p>By Ahmad Mustakim Zulkifli</p>
-            </div>
+        <div class="spotlight2">
+            <img src="chamber/images/resize-shopping-mall.webp" alt="shopping mall">
+            <p class="label">INTERNATIONAL</p>
+            <p><a href="https://www.theedgemarkets.com/article/inflation-seen-33-2022-2833-2023">The effect of OPR hikes on small businesses</a></p>
+            <p>By Ahmad Mustakim Zulkifli</p>
+        </div>
 
-            <div class="spotlight3">
-                <picture>
-                    <img src="chamber/images/resize-cafe.webp" alt="cafe">
-                </picture>
-                <p class="label">SMALL BUSINESS</p>
-                <h2><a href="https://www.shopify.com/my/blog/why-support-small-businesses">How To Support Small Businesses (2022)</a></h2>
-                <p>By Dayna Winter</p>
-            </div>
+        <div class="spotlight3">
+            <img src="chamber/images/resize-cafe.webp" alt="cafe">
+            <p class="label">SMALL BUSINESS</p>
+            <p><a href="https://www.shopify.com/my/blog/why-support-small-businesses">How To Support Small Businesses (2022)</a></p>
+            <p>By Dayna Winter</p>
         </div>
     </main>
     <footer>
         <div class="part1">
-            <img src="chamber/images/world.png" alt="logo">
+            <img src="chamber/images/logo.webp" alt="logo">
             <div class="part2">
             <p>Malaysia Chamber of Commerce</p>
             <p>15 A, Jalan Rejang 8, <br>Taman Setapak Jaya<br>53300 Kuala Lumpur.</p>

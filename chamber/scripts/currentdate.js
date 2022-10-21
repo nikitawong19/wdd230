@@ -2,7 +2,7 @@
 const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
 document.querySelector('.date').textContent = new Date().toLocaleDateString('en-US', options);
 
-// script for event reminder
+// show or hide the event reminder
 let date = new Date();
 let weekday = date.toLocaleDateString("default",{weekday:"long"});
 if (weekday === "Monday" || weekday === "Tuesday") {

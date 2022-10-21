@@ -3,7 +3,6 @@
 //     console.log("It Worked!") /* when click on hamburgerBtn, the console will print this word to prove that the following code is correct*/
 // }
 
-// do something useful with the function
 // use javaScript to add and remove a class from html
 function toggleMenu() {
     document.getElementById("navigation").classList.toggle("open");
