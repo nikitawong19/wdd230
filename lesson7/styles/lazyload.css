@@ -5,12 +5,14 @@ h1 {
 .container {
     display: grid;
     grid-template-columns: 1fr;
+    gap: 10px;
     text-align: center;
 }
 
 img {
     border: 1px solid black;
-    padding: 5px;
+    padding: 10px;
+    vertical-align: middle;
 }
 
 /* The images will blur at the beginning so a transition to the sharp one */
