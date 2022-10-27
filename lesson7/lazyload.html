@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progressive Loading of Images</title>
+    <meta name="description" content="WDD 230 Web Frontend Development I">
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/lazyload.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Progressive Loading of Images</h1>
+    <div class="container">
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/burger1.webp" alt="burger">
+        </picture>
+
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/burger2.webp" alt="burger">
+        </picture>
+
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/burger3.webp" alt="burger">
+        </picture>
+
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/burger4.webp" alt="burger">
+        </picture>
+
+        <picture>
+            <img src="images/placeholder.webp" data-src="images/burger5.webp" alt="burger">
+        </picture>
+    </div>
+    <script src="scripts/lazyload.js"></script>
+</body>
+
+</html>
