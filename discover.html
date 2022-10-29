@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysia Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 Web Frontend Development I">
+    <link rel="shortcut icon" href="chamber/images/favicon.ico">
+    <link href="chamber/styles/normalize.css" rel="stylesheet">
+    <link href="chamber/styles/main.css" rel="stylesheet">
+    <link href="chamber/styles/medium.css" rel="stylesheet">
+    <link href="chamber/styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div class="logo">
+                <figure class="logo">
+                    <img src="chamber/images/logo.webp" alt="logo">
+                </figure>
+                <div class="heading">
+                    <h1>Malaysia</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <div class="socialIcon">
+            <a href="https://www.facebook.com/" target="_blank"><img class="facebookLogo" src="chamber/images/facebook-icon.png" alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="linkedinLogo" src="chamber/images/linkedin-icon.png" alt="linkedin logo"></a>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+        <div class="reminder"></div>
+    </header>
+    <main class="discover">
+        <picture class="zoom">
+            <source media="(max-width: 400px)" srcset="chamber/images/malaysia400.webp">
+            <source media="(max-width: 600px)" srcset="chamber/images/malaysia600.webp">
+            <!-- <source media="(max-width: 800px)" srcset="chamber/images/malaysia800.webp"> -->
+            <img src="chamber/images/placeholder.webp" data-src="chamber/images/malaysia600.webp" alt="malaysia landscape" width="400" height="300">
+        </picture>
+        <article>
+            <h2>Location</h2>
+            <p>Malaysia is a Southeast Asian country occupying parts of the Malay Peninsula and the island of Borneo. It's known for its beaches, rainforests and mix of Malay, Chinese, Indian and European cultural influences. The capital, Kuala Lumpur, is home to colonial buildings, busy shopping districts such as Bukit Bintang and skyscrapers such as the iconic, 451m-tall Petronas Twin Towers.</p>
+        </article>
+        
+        <picture class="zoom">
+            <source media="(max-width: 400px)" srcset="chamber/images/population400.webp">
+            <source media="(max-width: 600px)" srcset="chamber/images/population600.webp">
+            <!-- <source media="(max-width: 800px)" srcset="chamber/images/population800.webp"> -->
+            <img src="chamber/images/population600.webp" data-src="chamber/images/population600.webp" alt="old man with grandchildren" width="400" height="300">
+        </picture>
+        <article>
+            <h2>Population</h2>
+            <p>The Citizens population increased from 30.0 million in 2021 to 30.2 million in 2022 with the growth rate decreasing from 0.8 per cent to 0.7 per cent over the same period. In 2022, the male population exceeds the female population at 17.0 million and 15.7 million respectively.</p>
+        </article>
+
+        <picture class="zoom">
+            <source media="(max-width: 400px)" srcset="chamber/images/chinatown400.webp">
+            <source media="(max-width: 600px)" srcset="chamber/images/chinatown600.webp">
+            <!-- <source media="(max-width: 800px)" srcset="chamber/images/chinatown800.webp"> -->
+            <img src="chamber/images/placeholder.webp" data-src="chamber/images/chinatown600.webp" alt="china town" width="400" height="300">
+        </picture>
+        <article>
+            <h2>China Town</h2>
+            <p>Lively, colorful Chinatown is centered on Petaling Street, known for its fashion shops and a large covered market with produce, clothes and accessories. Local artists sell paintings and crafts at nearby Central Market, where stalls also dish up noodles and curry.</p>
+        </article>
+
+        <picture class="zoom">
+            <source media="(max-width: 400px)" srcset="chamber/images/bukitbintang400.webp">
+            <source media="(max-width: 600px)" srcset="chamber/images/bukitbintang600.webp">
+            <!-- <source media="(max-width: 800px)" srcset="chamber/images/bukitbintang800.webp"> -->
+            <img src="chamber/images/placeholder.webp" data-src="chamber/images/bukitbintang600.webp" alt="bukit bintang" width="400" height="300">
+        </picture>
+        <article>
+            <h2>Bukit Bintang</h2>
+            <p>Bukit Bintang is known for Jalan Bukit Bintang, a busy thoroughfare with upscale malls and luxe fashion boutiques. Al fresco bars and live music clubs line Changkat Bukit Bintang street, while Jalan Alor is a lively strip known for sidewalk restaurants serving Chinese fare like clam soup and buttered prawns. Nearby, KL Forest Eco Park has nature trails and an elevated walkway.</p>
+        </article>
+
+        <picture class="zoom">
+            <source media="(max-width: 400px)" srcset="chamber/images/genting400.webp">
+            <source media="(max-width: 600px)" srcset="chamber/images/genting600.webp">
+            <!-- <source media="(max-width: 800px)" srcset="chamber/images/genting800.webp"> -->
+            <img src="chamber/images/placeholder.webp" data-src="chamber/images/genting600.webp" alt="genting highland" width="400" height="300">
+        </picture>
+        <article>
+            <h2>Genting Highland</h2>
+            <p>Genting Highlands is an integrated resort development comprising hotels, casinos, shopping malls and the latest Skyworlds Theme Park in Pahang, perched on the peak of Gunung Ulu Kali at 1,800 meters high. On a clear day, the peak overlooks lush valleys of rainforest stretching towards KL, a breathtaking view for visitors as they enjoy the cooling weather and serene mountain environment.</p>
+        </article>
+
+        <picture class="zoom">
+            <source media="(max-width: 400px)" srcset="chamber/images/batucaves400.webp">
+            <source media="(max-width: 600px)" srcset="chamber/images/batucaves600.webp">
+            <!-- <source media="(max-width: 800px)" srcset="chamber/images/batucaves800.webp"> -->
+            <img src="chamber/images/population.webp" data-src="chamber/images/batucaves600.webp" alt="batu caves" width="400" height="300">
+        </picture>
+        <article>
+            <h2>Batu Caves</h2>
+            <p>The magnificent Batu Caves are one of the top tourist attractions in Malaysia. Most tourist has always known the famous 272 steps leading to the entrance of the Sri Subramaniar Swamy Temple in Batu Caves. The colourful new steps are already proving popular with Instagrammers, but the religious site is also a pilgrimage for many Hindus and features a massive golden statue of the god Lord Murugan.</p>
+        </article>
+        <hr>
+        <p class="visit">
+            <span class="label">Number of Visits:</span>
+            <span class="visits"></span>
+        </p>
+    </main>        
+    <footer>
+        <div class="part1">
+            <img src="chamber/images/logo.webp" alt="logo">
+            <div class="part2">
+            <p>Malaysia Chamber of Commerce</p>
+            <p>15 A, Jalan Rejang 8, <br>Taman Setapak Jaya<br>53300 Kuala Lumpur.</p>
+            </div>
+            <div class="part3">
+            <p>malaysiachamber.com</p>
+            <p>60-126521214</p>
+            <a href="https://www.google.com/maps/place" target="_blank">Location Map</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>&copy; 2022 Malaysia Chamber of Commerce | Nikita Wong | WDD 230 Project | <span id="lastModified"></span></span>
+        </div>
+    </footer>
+    <script src="chamber/scripts/function.js"></script>
+    <script src="chamber/scripts/currentdate.js"></script>
+    <script src="chamber/scripts/lazyload.js"></script>
+    <script src="chamber/scripts/localStorage.js"></script>
+</body>
+
+</html>
