@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaysia Chamber of Commerce</title>
+    <meta name="description" content="WDD 230 Web Frontend Development I">
+    <link rel="shortcut icon" href="chamber/images/favicon.ico">
+    <link href="chamber/styles/normalize.css" rel="stylesheet">
+    <link href="chamber/styles/main.css" rel="stylesheet">
+    <link href="chamber/styles/medium.css" rel="stylesheet">
+    <link href="chamber/styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="container">
+            <div class="logo">
+                <figure class="logo">
+                    <img src="chamber/images/logo.webp" alt="logo">
+                </figure>
+                <div class="heading">
+                    <h1>Malaysia</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+        </div>
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <div class="socialIcon">
+            <a href="https://www.facebook.com/" target="_blank"><img class="facebookLogo" src="chamber/images/facebook-icon.png" alt="facebook logo"></a>
+            <a href="https://www.linkedin.com/" target="_blank"><img class="linkedinLogo" src="chamber/images/linkedin-icon.png" alt="linkedin logo"></a>
+        </div>
+        <nav>
+            <ul id="navigation">
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="date"></div>
+        <div class="reminder"></div>
+    </header>
+    <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Applicant Information</legend>
+            </fieldset>
+
+        </form>
+    </main>
+    <footer>
+        <div class="part1">
+            <img src="chamber/images/logo.webp" alt="logo">
+            <div class="part2">
+            <p>Malaysia Chamber of Commerce</p>
+            <p>15 A, Jalan Rejang 8, <br>Taman Setapak Jaya<br>53300 Kuala Lumpur.</p>
+            </div>
+            <div class="part3">
+            <p>malaysiachamber.com</p>
+            <p>60-126521214</p>
+            <a href="https://www.google.com/maps/place" target="_blank">Location Map</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <span>&copy; 2022 Malaysia Chamber of Commerce | Nikita Wong | WDD 230 Project | <span id="lastModified"></span></span>
+        </div>
+    </footer>
+    <script src="chamber/scripts/function.js"></script>
+    <script src="chamber/scripts/currentdate.js"></script>
+</body>
+
+</html>
