@@ -146,7 +146,7 @@
         padding: 0 15px 15px;
     }
 
-    /* ---------- footer ----------*/
+    /* ---------- footer ---------- */
     .part1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -155,7 +155,7 @@
         padding: 15px;
     }
 
-    /* ---------- discover page ----------*/
+    /* ---------- discover page ---------- */
     /* blur at the beginning and transition to sharp */
     .discover img[data-src] {
         filter: blur(0.2em);

@@ -339,7 +339,7 @@ footer div img {
     border-top: 0.5px solid white;
 }
 
-/* ---------- discover page ----------*/
+/* ---------- discover page ---------- */
 .discover {
     background-color: #eee;
     padding: 10px;
@@ -389,7 +389,7 @@ form fieldset {
     font-size: large;
 }
 
-form label.description {
+form label.top {
     display: block;
     padding-top: 1rem;
 }

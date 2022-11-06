@@ -47,34 +47,34 @@
         <div class="reminder"></div>
     </header>
     <main>
-        <h2 class="form-title">Join the Malaysia Chamber</h2>
+        <h2 class="form-title">Membership Application Form</h2>
         <form method="get" action="thankyou.html">
             <fieldset>
                 <p class="ptitle">Applicant Information</p>
                 
-                <label class="description">First Name:*</label>
+                <label for="fname" class="top">First Name:*</label>
                 <input type="text" name="fname" required>
-               
-                <label class="description">Last Name:*</label>
+                
+                <label for="lname" class="top">Last Name:*</label>
                 <input type="text" name="lname" required>
 
-                <label class="description">Email:*</label>
+                <label for="email" class="top">Email:*</label>
                 <input type="email" name="email" placeholder="name@domain.com" required>
 
-                <label class="description">Mobile Number:*</label>
-                <input type="tel" name="phone" required>
+                <label for="tel" class="top">Mobile Number:*</label>
+                <input type="tel" name="tel" required>
             </fieldset>
 
             <fieldset>
                 <p class="ptitle">Business Information</p>
-                <label class="description">Business Name/Title:*</label>
+                <label for="business-name" class="top">Business Name/Title:*</label>
                 <input type="text" name="name" required>
 
-                <label class="description">Business Position/Title:</label>
+                <label for="business-position" class="top">Business Position/Title:</label>
                 <input type="text" name="title" pattern="[A-Za-z -]{7,}">
                 <p>Minimum of 7 characters</p>
                 
-                <label class="description">Business Description:</label>
+                <label for="business-description" class="top">Business Description:</label>
                 <textarea name="description" cols="30" rows="10"></textarea>
             </fieldset>
 
