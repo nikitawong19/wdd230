@@ -47,57 +47,43 @@
         <div class="reminder"></div>
     </header>
     <main>
-        <h2 class="form-title">Membership Application Form</h2>
+        <h2 class="main-title">Membership Application Form</h2>
         <form method="get" action="thankyou.html">
             <fieldset>
-                <p class="ptitle">Applicant Information</p>
-                
-                <label for="fname" class="top">First Name:*</label>
-                <input type="text" name="fname" required>
-                
-                <label for="lname" class="top">Last Name:*</label>
-                <input type="text" name="lname" required>
-
-                <label for="email" class="top">Email:*</label>
-                <input type="email" name="email" placeholder="name@domain.com" required>
-
-                <label for="tel" class="top">Mobile Number:*</label>
-                <input type="tel" name="tel" required>
+                <legend>Applicant Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="name@domain.com" required></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" placeholder="123456789" required></label>
             </fieldset>
 
             <fieldset>
-                <p class="ptitle">Business Information</p>
-                <label for="business-name" class="top">Business Name/Title:*</label>
-                <input type="text" name="name" required>
-
-                <label for="business-position" class="top">Business Position/Title:</label>
-                <input type="text" name="title" pattern="[A-Za-z -]{7,}">
-                <p>Minimum of 7 characters</p>
-                
-                <label for="business-description" class="top">Business Description:</label>
+                <legend>Business Information</legend>
+                <label class="top">Business Name/Title*<input type="text" name="name" required></label>
+                <label class="top">Business Position/Title<input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
+                Minimum of 7 characters
+                <label class="top">Business Description</label>
                 <textarea name="description" cols="30" rows="10"></textarea>
             </fieldset>
 
             <fieldset>
-                <p class="ptitle">Membership Level</p>
-                <label class="sbs"><input type="radio" name="level" value="np membership">NP Membership</label>
+                <legend>Membership Level</legend>
+                <label class="sbs"><input type="radio" name="level" value="np membership"> NP Membership</label> 
                 For non-profit organizations and there is no fee.
-
-                <label class="sbs"><input type="radio" name="level" value="bronze membership">Bronze Membership</label>
+                <hr>
+                <label class="sbs"><input type="radio" name="level" value="bronze membership"> Bronze Membership</label>
                 RM5,000/year. For business looking for networking access to Chamber programming. If you want to participate in Chamber activities but do not need to promote your business through our marketing programmes, join at this level.
-
-                <label class="sbs"><input type="radio" name="level" value="silver membership">Silver Membership</label>
+                <hr>
+                <label class="sbs"><input type="radio" name="level" value="silver membership"> Silver Membership</label>
                 RM10,000/year. For business looking Chamber access AND marketing and promotional exposure. Benefit include eligible to place ads in the e-newsletter and on chamber spotlight page in the website.
-
-                <label class="sbs"><input type="radio" name="level" value="gold membership">Gold Membership</label>
+                <hr>
+                <label class="sbs"><input type="radio" name="level" value="gold membership"> Gold Membership</label>
                 RM15,000/year. For business looking for higher profile opportunity to market. Benefit include featured once annually on Chamber Facebook page, boosted to 26,000+ viewers in surrounding area and two free tickets to the Annual Awards event.
-                
             </fieldset>
             
             <input type="hidden" id="date" name="date" value="CurrentTime">
             <input type="hidden" id="time" name="time" value="CurrentDate">
-            <input type="submit" value="Join Chamber" class="submitBtn">
-
+            <input type="submit" value="Join The Chamber" class="submitBtn">
         </form>
     </main>
     <footer>

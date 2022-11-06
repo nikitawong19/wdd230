@@ -377,16 +377,16 @@ article {
 
 /* ---------- form ---------- */
 form fieldset {
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 15px;
     border: 1px solid grey;
     border-radius: 5px;
 }
 
-.ptitle {
-    padding-bottom: 15px;
-    font-weight: bold;
-    font-size: large;
+form legend {
+    color: blue;
+    margin: 0 1rem;
+    padding: 0 .5rem;
 }
 
 form label.top {
@@ -394,19 +394,15 @@ form label.top {
     padding-top: 1rem;
 }
 
-form input {
-    /* display: block; */
+form label.top input {
+    display: block;
     border: 1px solid grey;
     border-radius: 5px;
     padding: .75rem;
-    /* width: 100%; */
-    max-width: 20rem;
     color: #555;
-    background-color: #eee;;
-}
-
-textarea {
-    width: 50%;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #eee;
 }
 
 form label.sbs {
@@ -415,7 +411,11 @@ form label.sbs {
     color: #555;
 }
 
-.submitBtn {
+textarea {
+    width: 100%;
+}
+
+form input.submitBtn {
     border: none;
     background-color: black;
     color: white;
@@ -426,8 +426,9 @@ form label.sbs {
     max-width: 20rem;
 }
 
-.thanks {
+.thanks-page {
+    grid-column: 1 / 2;
     padding: 50px;
-    text-align: center;
     background-color: #eee;
+    text-align: center;
 }
