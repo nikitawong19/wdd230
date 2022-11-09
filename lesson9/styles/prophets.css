@@ -1,0 +1,47 @@
+/* ---------- apply to entire page ----------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    max-width: 1600px;
+    margin: auto;
+  }
+
+h1 {
+    text-align: center;
+}
+
+.cards, footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    text-align: center;
+    padding: 1rem;
+    background-color: #eee;
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: #bbb;
+    border: 3px solid black;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+img {
+    width: auto;
+    max-width: 300px;
+    height: 200px;
+    box-shadow: 0 0 30px #777;
+}
+
+p {
+    font-size: small;
+    margin: 0.25rem;
+}
