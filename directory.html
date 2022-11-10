@@ -47,45 +47,13 @@
         <div class="reminder"></div>
     </header>
     <main>
-        <h2 class="main-title">Membership Application Form</h2>
-        <form method="get" action="thankyou.html">
-            <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top">First Name*<input type="text" name="fname" required></label>
-                <label class="top">Last Name*<input type="text" name="lname" required></label>
-                <label class="top">Email*<input type="email" name="email" placeholder="name@domain.com" required></label>
-                <label class="top">Phone Number*<input type="tel" name="phone" placeholder="123456789" required></label>
-            </fieldset>
-
-            <fieldset>
-                <legend>Business Information</legend>
-                <label class="top">Business Name/Title*<input type="text" name="name" required></label>
-                <label class="top">Business Position/Title<input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
-                Minimum of 7 characters
-                <label class="top">Business Description<textarea name="description" cols="30" rows="10"></textarea></label>
-                
-            </fieldset>
-
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="sbs"><input type="radio" name="level" value="np membership"> NP Membership</label> 
-                For non-profit organizations and there is no fee.
-                <hr>
-                <label class="sbs"><input type="radio" name="level" value="bronze membership"> Bronze Membership</label>
-                RM5,000/year. For business looking for networking access to Chamber programming. If you want to participate in Chamber activities but do not need to promote your business through our marketing programmes, join at this level.
-                <hr>
-                <label class="sbs"><input type="radio" name="level" value="silver membership"> Silver Membership</label>
-                RM10,000/year. For business looking Chamber access AND marketing and promotional exposure. Benefit include eligible to place ads in the e-newsletter and on chamber spotlight page in the website.
-                <hr>
-                <label class="sbs"><input type="radio" name="level" value="gold membership"> Gold Membership</label>
-                RM15,000/year. For business looking for higher profile opportunity to market. Benefit include featured once annually on Chamber Facebook page, boosted to 26,000+ viewers in surrounding area and two free tickets to the Annual Awards event.
-            </fieldset>
-            
-            <input type="hidden" id="date" name="date" value="CurrentTime">
-            <input type="hidden" id="time" name="time" value="CurrentDate">
-            <input type="submit" value="Join The Chamber" class="submitBtn">
-        </form>
-    </main>
+        <header>
+            <h1>Membership Directory</h1>
+        </header>
+        <main>
+            <div class="cards"></div>
+        </main>
+    </main>        
     <footer>
         <div class="part1">
             <img src="chamber/images/logo.webp" alt="logo">
@@ -105,6 +73,9 @@
     </footer>
     <script src="chamber/scripts/function.js"></script>
     <script src="chamber/scripts/currentdate.js"></script>
+    <script src="chamber/scripts/lazyload.js"></script>
+    <script src="chamber/scripts/localStorage.js"></script>
+    <script src="chamber/scripts/directory.js"></script>
 </body>
 
 </html>
