@@ -1,12 +1,12 @@
 {
-    "company": [
+    "companies": [
         {
             "name": "Intel Technology Sdn Bhd",
             "description": "Assembling and testing of integrated semiconductor devices.",
             "address": "Bayan Lepas Free Industrial Zone Phase 3 Bayan Lepas Penang Malaysia",
             "website": "www.intel.com",
             "phone": "04-253 8754",
-            "image": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/intel-256.png",
+            "imageurl": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/intel-256.png",
             "membership level": "Gold"
         },
         {
@@ -15,7 +15,7 @@
             "address": "Plot 7, Kinta Free Industrial Zone (FTZ) Chemor Perak Malaysia",
             "website": "www.yamaha.com",
             "phone": "05-291 2111",
-            "image": "https://www.kindpng.com/picc/m/486-4869179_yamaha-electronic-manufacturing-sdn-bhd-chemor-perak-hd.png",
+            "imageurl": "https://www.kindpng.com/picc/m/486-4869179_yamaha-electronic-manufacturing-sdn-bhd-chemor-perak-hd.png",
             "membership level": "Gold"
         },
         {
@@ -24,7 +24,7 @@
             "address": "Lot 3, Jalan SS8/6 Petaling Jaya Selangor Malaysia",
             "website": "www.wdc.com",
             "phone": "03-7682 5740",
-            "image": "http://www.rw-designer.com/icon-image/6207-256x256x32.png",
+            "imageurl": "http://www.rw-designer.com/icon-image/6207-256x256x32.png",
             "membership level": "Bronze"
         },
         {
@@ -33,7 +33,7 @@
             "address": "4, Jalan Tandang Petaling Jaya Selangor Malaysia",
             "website": "www.conti-sime.com",
             "phone": "03-7787 8888",
-            "image": "https://www.carlogos.org/tire-logos/continental-logo-black-on-gold.png",
+            "imageurl": "https://www.carlogos.org/tire-logos/continental-logo-black-on-gold.png",
             "membership level": "Bronze"
         },
         {
@@ -42,7 +42,7 @@
             "address": "Lot 5, Jalan Kemajuan Bandar Baru Bangi Selangor Malaysia",
             "website": "www.sony.com",
             "phone": "03-8925 7887",
-            "image": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/sony-256.png",
+            "imageurl": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/sony-256.png",
             "membership level": "Silver"
         },
         {
@@ -51,7 +51,7 @@
             "address": "Executive Floor, Level 29, Menara AIA Kuala Lumpur Malaysia",
             "website": "www.aia.com.my",
             "phone": "03-2056 2993",
-            "image": "https://1000logos.net/wp-content/uploads/2020/09/AIA-Logo.png",
+            "imageurl": "https://1000logos.net/wp-content/uploads/2020/09/AIA-Logo.png",
             "membership level": "Silver"
         },
         {
@@ -60,7 +60,7 @@
             "address": "No 58, Jalan Ang Seng Bangsar Kuala Lumpur",
             "website": "https://www.alilahotels.com/bangsar",
             "phone": "03-2268 3888",
-            "image": "https://searchlogovector.com/wp-content/uploads/2018/12/alila-bangsar-kuala-lumpur-logo-vector.png",
+            "imageurl": "https://searchlogovector.com/wp-content/uploads/2018/12/alila-bangsar-kuala-lumpur-logo-vector.png",
             "membership level": "Bronze"
         },
         {
@@ -69,7 +69,7 @@
             "address": "801B, Level 8, Tower B, Uptown 5 Petaling Jaya Selangor Malaysia",
             "website": "www.fedex.com",
             "phone": "03-7720 6000",
-            "image": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/125_Fedex_logo_logos-256.png",
+            "imageurl": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/125_Fedex_logo_logos-256.png",
             "membership level": "Bronze"
         },
         {
@@ -78,7 +78,7 @@
             "address": "376, Jalan Tun Razak, Kuala Lumpur",
             "website": "https://my.usembassy.gov/",
             "phone": "03-2168 5000",
-            "image": "http://mylifechamp.com/wp-content/uploads/2014/11/2.-Organizer-2-US-Embassy.png",
+            "imageurl": "http://mylifechamp.com/wp-content/uploads/2014/11/2.-Organizer-2-US-Embassy.png",
             "membership level": "Bronze"
         }
 
