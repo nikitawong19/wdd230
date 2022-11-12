@@ -21,19 +21,19 @@ function displayCompanies(company) {
     let website = document.createElement('p');
     let portrait = document.createElement('img');
 
-    // Change the textContent property of the h2 element to contain the company's full name
+    // Change the textContent property of the h3 element and others to contain the company's full name and etc.
     h3.textContent = `${company.name}`;
     description.textContent = `${company.description}`;
     address.textContent = `${company.address}`;
     phone.textContent = `${company.phone}`;
     website.textContent = `${company.website}`;
 
-    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values. (Fill in the blank with the appropriate variable).
+    // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
     portrait.setAttribute('src', company.imageurl);
     portrait.setAttribute('alt', `Portrait of ${company.name}`);
     portrait.setAttribute('loading', 'lazy');
 
-    // Add/append the section(card) with the h2 element
+    // Add/append the section(card) with the h3 element and etc.
     card.appendChild(portrait);
     card.appendChild(h3);
     card.appendChild(description);
