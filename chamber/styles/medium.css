@@ -168,11 +168,19 @@
     }
 
     /* ---------- Directory Page ---------- */
-    div.cards {
+    .mainDirectory {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        grid-template-columns: none;
     }
 
+    div.cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        column-gap: 10px
+    }
+
+    .cards section:nth-of-type(7) {
+        overflow-wrap: break-word;
+    }
 
 } /* end of medium view */

@@ -11,7 +11,7 @@ fetch(requestURL)
     console.table(jsonObject);  // temporary checking for valid response and data parsing
 });
 
-function displayCompanies(company, birthdate, birthplace) {
+function displayCompanies(company) {
     // Create elements to add to the document
     let card = document.createElement('section');
     let h3 = document.createElement('h3');

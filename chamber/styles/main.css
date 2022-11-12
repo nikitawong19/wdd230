@@ -452,14 +452,3 @@ div.cards p {
 div.cards img {
     max-width: 30%;
 }
-
-div.switch {
-    text-align: right;
-    border: 0 solid black;
-    border-radius: 0.18rem;
-}
-
-div.switch button {
-    padding: 0.625rem;
-    margin: 0.3125rem;
-}
