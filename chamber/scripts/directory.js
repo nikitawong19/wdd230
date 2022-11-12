@@ -14,7 +14,7 @@ fetch(requestURL)
 function displayCompanies(company, birthdate, birthplace) {
     // Create elements to add to the document
     let card = document.createElement('section');
-    let h3 = document.createElement('h2');
+    let h3 = document.createElement('h3');
     let description = document.createElement('p');
     let address = document.createElement('p');
     let phone = document.createElement('p');

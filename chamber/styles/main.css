@@ -180,7 +180,7 @@ main {
 main div {
     flex: 1;
     /* border: 1px solid #bbb; */
-    background-color: #eee;
+    /* background-color: #eee; */
 }
 
 main div img {
@@ -434,3 +434,32 @@ form input.submitBtn {
 }
 
 /* ---------- Directory page ---------- */
+h3 {
+    margin-top: 0.635rem;
+}
+
+div.cards section {
+    padding: 0.635rem;
+    margin-top: 0.635rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+div.cards p {
+    padding-top: 0.625rem;
+}
+
+div.cards img {
+    max-width: 30%;
+}
+
+div.switch {
+    text-align: right;
+    border: 0 solid black;
+    border-radius: 0.18rem;
+}
+
+div.switch button {
+    padding: 0.625rem;
+    margin: 0.3125rem;
+}
