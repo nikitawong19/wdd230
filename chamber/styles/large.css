@@ -192,4 +192,10 @@
         grid-column: 1 / 5;
     }
 
+    div.cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        column-gap: 10px
+    }
+
 } /* end large view */
