@@ -37,6 +37,7 @@
         </div>
         <nav>
             <ul id="navigation">
+                <li><a href="chamber-home-page-build.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
@@ -69,25 +70,34 @@
 
         <div class="weatherBox">
             <h2>Weather</h2>
-            <img src="chamber/images/sunny.webp" alt="sun behind cloud">
-            <p class="temperature">
-                <span class="currentTemp">50</span>
-                <span>&#8457;</span>
-            </p>
-            <p class="forecast">Partly Sunny</p>
+            <hr>
+            <p><span class="current-temp"></span>&deg;C</p>
+            <figure>
+                <img src="" alt="" class="weather-icon">
+                <figcaption></figcaption>
+            </figure>
             <hr>
             <table>
                 <tr>
-                    <td>Wind Speed:</td>
-                    <td><span class="currentWind">9.0</span> km/h</td>
+                    <td>Wind Speed: <span class="wind-speed"></span> m/s</td>
                 </tr>
                 <tr>
-                    <td>Wind Chill:</td>
-                    <td class="windChillCell"> <span>&#8457;</span></td>
+                    <td>Wind Chill: <span class="wind-chill"></span> m/s</td>
                 </tr>
             </table>
         </div>
-
+        <!-- <div class="weatherBox">
+            <h2>Weather</h2>
+            <hr>
+            <span class="current-temp"></span>&deg;C
+            <figure>
+                <img src="" alt="" class="weather-icon">
+                <figcaption></figcaption>
+            </figure>
+            <hr>
+            <p>Wind Speed: <span class="wind-speed"> </span> m/s</p>
+            <p>Wind Chill: <span class="wind-chill"></span> m/s</p>
+        </div> -->
         <div class="joinUsBox">
             <p class="joinUs">Join Us!</p>
             <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
@@ -141,6 +151,7 @@
     <script src="chamber/scripts/function.js"></script>
     <script src="chamber/scripts/windchill.js"></script>
     <script src="chamber/scripts/currentdate.js"></script>
+    <script src="chamber/scripts/weatherapi.js"></script>
 </body>
 
 </html>
