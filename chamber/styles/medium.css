@@ -104,19 +104,9 @@
     }
 
     /* ---------- weather box ---------- */
-    .weatherBox {
+    div.weatherBox {
         grid-column: 3 / 5;
         grid-row: 5 / 6;
-    }
-
-    .weatherBox img {
-        width: 100px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    p.temperature {
-        font-size:3vw;
     }
     
     /* ---------- spotlight 3 ---------- */
@@ -125,12 +115,17 @@
     }
     
     /* ---------- footer ---------- */
-    .part1 {
+    .sub-footer1 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         align-items: center;
         padding: 15px;
+    }
+
+    .sub-footer2 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
     }
 
     /* ---------- discover page ---------- */
