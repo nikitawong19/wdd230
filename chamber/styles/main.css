@@ -305,7 +305,7 @@ footer, footer a {
     color: white;
 }
 
-.part1 {
+.sub-footer1 {
     display: grid;
     gap: 10px;
     text-align: center;
