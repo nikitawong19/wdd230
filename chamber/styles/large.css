@@ -98,23 +98,9 @@
     }
 
     /* ---------- weather box ---------- */
-    .weatherBox {
+    div.weatherBox {
         grid-column: 1 / 2;
         grid-row: 2 / 3;
-    }
-
-    picture.weatherImg {
-        width: 100px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    p.temperature {
-        font-size: 2vw;
-    }
-
-    p.forecast {
-        align-self: center;
     }
 
     /* ---------- join us box ---------- */
