@@ -23,9 +23,9 @@ document.querySelector("#lastModified").textContent =  `Last Modification: ${doc
 
 
 // A hidden field that contains the current date and time that the form was loaded by the user.
-const d = new Date();
-document.getElementById("date").value = d.toDateString();
-let hours = d.getHours();
-let mins = d.getMinutes();
-let seconds = d.getSeconds();
-document.getElementById("time").value = hours + ":" + mins + ":" + seconds;
+// const d = new Date();
+// document.getElementById("date").value = d.toDateString();
+// let hours = d.getHours();
+// let mins = d.getMinutes();
+// let seconds = d.getSeconds();
+// document.getElementById("time").value = hours + ":" + mins + ":" + seconds;
