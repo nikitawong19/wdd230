@@ -133,8 +133,7 @@ nav ul.open li {
 
 div.date {
     text-align: center;
-	border: 1px solid #bbb;
-	padding: 0.75rem;
+	padding: 0.625rem;
 	background-color: #eee;
     max-width: 960px;
     width: 100%;
@@ -420,35 +419,20 @@ form input.submitBtn {
 }
 
 /* ---------- directory page ---------- */
-h3 {
-    margin-top: 0.635rem;
-}
-
 div.cards section {
-    padding: 0.635rem;
-    margin-top: 0.635rem;
     border: 1px solid black;
-    text-align: center;
-}
-
-div.cards p {
-    padding-top: 0.625rem;
+    display: grid;
+    gap: 0.625rem;
+    padding: 0.625rem;
+    margin: 0.625rem;
 }
 
 div.cards img {
-    max-width: 30%;
+    max-width: 6rem;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-}
-  
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+button.grid {
+    font-size: 20px;
+    padding: 5px 5px;
+    cursor: pointer;
 }

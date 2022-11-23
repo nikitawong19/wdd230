@@ -163,20 +163,17 @@
     }
 
     /* ---------- Directory Page ---------- */
-    .mainDirectory {
-        display: grid;
+    main {
         grid-template-columns: none;
     }
 
     div.cards {
         display: grid;
         grid-template-columns: repeat(2, minmax(0,1fr));
-        column-gap: 10px;
-        row-gap: 10px;
     }
 
-    .cards section:nth-of-type(7) {
+    /* .cards section:nth-of-type(7) {
         overflow-wrap: break-word;
-    }
+    } */
 
 } /* end of medium view */
