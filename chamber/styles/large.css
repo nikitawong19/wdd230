@@ -1,6 +1,6 @@
 /* ---------- media queries for large view ----------*/
 /* 64em is also 1028px when basefont is 16px */
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64em) {
 
 /* if want to slim down the navigation do this */
 /* nav ul li a {
@@ -178,12 +178,16 @@
         grid-column: 1 / 5;
     }
 
-    /* ---------- Directory Page ---------- */
+    /* ---------- directory Page ---------- */
     main {
         grid-template-columns: none;
     }
 
     div.cards {
+        grid-template-columns: repeat(3, minmax(0,1fr));
+    }
+
+    div.cards.grid {
         grid-template-columns: repeat(3, minmax(0,1fr));
     }
 

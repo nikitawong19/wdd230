@@ -41,7 +41,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="date"></div>
@@ -50,16 +50,14 @@
     <main>
         <div class="heroBox">
             <picture class="heroImg">
-                <source media="(max-width: 300px)" srcset="chamber/images/office300.webp">
-                <source media="(max-width: 500px)" srcset="chamber/images/office500.webp">
-                <source media="(max-width: 700px)" srcset="chamber/images/office700.webp">
-                <source media="(max-width: 900px)" srcset="chamber/images/office900.webp">
-                <img src="chamber/images/office1100.webp" alt="Petronas twin tower image">
-                <!-- <img src="chamber/images/klcc.webp" alt="Petronas twin tower image"> -->
+                <source media="(max-width: 500px)" srcset="chamber/images/klcc600x900.webp" width="600" height="900">
+                <source media="(max-width: 600px)" srcset="chamber/images/klcc600x900.webp" width="600" height="900">
+                <source media="(max-width: 700px)" srcset="chamber/images/klcc700x1050.webp" width="700" height="1050">
+                <img src="chamber/images/klcc853x1280.webp" alt="Petronas twin tower image" width="853" height="1268">
             </picture>
             
-            <!-- <h2 class="welcome">Welcome to Malaysia</h2>
-            <p class="join">Join the Chamber</p> -->
+            <h2 class="welcome">Welcome to Malaysia</h2>
+            <p class="join">Join the Chamber</p>
         </div>
         
         <div class="eventBox">
@@ -98,43 +96,40 @@
             <p><a href="https://www.micci.com/NewsDetail.aspx?NewsId=755">Malaysia Chamber of Commerce's Executive Director responded to budget 2023 on TV3-Money Matters</a></p>
             <p>By marcom@micci.com</p>
         </div>
-        
-        <div class="spotlight1">
-            <img src="chamber/images/resize-investment.webp" alt="check shares">
-            <p class="label">INTERNATIONAL</p>
-            <p><a href="https://www.nst.com.my/business/2022/09/827902/malaysia-attracted-rm1233bil-investments-1h-2022">Malaysia attracted RM123.3bil in investments for 1H 2022</a></p>
-            <p>By Asila Jalil</p>
-        </div>
+            <div class="spotlight1">
+                <img src="chamber/images/resize-investment.webp" alt="check shares" width="269" height="179">
+                <p class="label">INTERNATIONAL</p>
+                <p><a href="https://www.nst.com.my/business/2022/09/827902/malaysia-attracted-rm1233bil-investments-1h-2022">Malaysia attracted RM123.3bil in investments for 1H 2022</a></p>
+                <p>By Asila Jalil</p>
+            </div>
 
-        <div class="spotlight2">
-            <img src="chamber/images/resize-shopping-mall.webp" alt="shopping mall">
-            <p class="label">INTERNATIONAL</p>
-            <p><a href="https://www.theedgemarkets.com/article/inflation-seen-33-2022-2833-2023">The effect of OPR hikes on small businesses</a></p>
-            <p>By Ahmad Mustakim Zulkifli</p>
-        </div>
+            <div class="spotlight2">
+                <img src="chamber/images/resize-shopping-mall.webp" alt="shopping mall" width="269" height="179">
+                <p class="label">INTERNATIONAL</p>
+                <p><a href="https://www.theedgemarkets.com/article/inflation-seen-33-2022-2833-2023">The effect of OPR hikes on small businesses</a></p>
+                <p>By Ahmad Mustakim Zulkifli</p>
+            </div>
 
-        <div class="spotlight3">
-            <img src="chamber/images/resize-cafe.webp" alt="cafe">
-            <p class="label">SMALL BUSINESS</p>
-            <p><a href="https://www.shopify.com/my/blog/why-support-small-businesses">How To Support Small Businesses (2022)</a></p>
-            <p>By Dayna Winter</p>
-        </div>
+            <div class="spotlight3">
+                <img src="chamber/images/resize-cafe.webp" alt="cafe" width="269" height="151">
+                <p class="label">SMALL BUSINESS</p>
+                <p><a href="https://www.shopify.com/my/blog/why-support-small-businesses">How To Support Small Businesses (2022)</a></p>
+                <p>By Dayna Winter</p>
+            </div>
     </main>
     <footer>
         <div class="sub-footer1">
             <img src="chamber/images/logo.webp" alt="logo">
             <div class="sub-footer2">
                 <p>Malaysia Chamber of Commerce</p>
-            </div>
-            <div>
-                <p>15 A, Jalan Rejang 8, <br>Taman Setapak Jaya<br>53300 Kuala Lumpur.</p>
+                <p>15 A, Jalan Rejang 8, Taman Setapak Jaya 53300 Kuala Lumpur.</p><br>
+                <a href="https://openweathermap.org/" target="_blank">Weather Data Source</a>
             </div>
             <div class="sub-footer3">
                 <p>malaysiachamber.com</p>
-                <p>60-126521214</p>
+                <p>60-126521214</p><br>
+                <a href="https://www.google.com/maps/place" target="_blank">Location Map</a>
             </div>
-            <div><a href="https://www.google.com/maps/place" target="_blank">Location Map</a></div>
-            <div><a href="https://openweathermap.org/" target="_blank">Weather Data Source</a></div>
         </div>
         <div class="copyright">
             <span>&copy; 2022 Malaysia Chamber of Commerce | Nikita Wong | WDD 230 Project | <span id="lastModified"></span></span>
@@ -143,6 +138,7 @@
     <script src="chamber/scripts/function.js"></script>
     <script src="chamber/scripts/currentdate.js"></script>
     <script src="chamber/scripts/weatherapi.js"></script>
+    <script src="chamber/scripts/random.js"></script>
 </body>
 
 </html>

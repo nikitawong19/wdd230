@@ -48,41 +48,46 @@
         <div class="reminder"></div>
     </header>
     <main>
-        <h2 class="main-title">Membership Application Form</h2>
+        <h2>Contact Us</h2>
+        <div class="contact">
+            <div class="officeHours">
+                <h3>Office Hours:</h3>
+                <p>Monday - Friday 8:30 AM - 5:30 PM</p>
+            </div>
+            <div class="email">
+                <h3>Email:</h3>
+                <p>malaysiachamber.com</p>
+            </div>
+            <div class="number">
+                <h3>Contact Number:</h3>
+                <p>60-126521214</p>
+            </div>
+            <div class="contact1">
+                <h3>Point Of Contact:</h3>
+                <div>
+                    <p>Wong Lee Liang</p>
+                    <p>President & CEO</p>
+                    <p>603-41412345. Ext: 1</p>
+                </div>
+            </div>
+            <div class="contact2">
+                <p>Tan Khang Liang</p>
+                <p>Vice President of Marketing and Communication</p>
+                <p>603-41412345. Ext: 2</p>
+            </div>
+        </div>
         <form method="get" action="thankyou.html">
             <fieldset>
-                <legend>Applicant Information</legend>
+                <legend>General Inquiries</legend>
                 <label class="top">First Name*<input type="text" name="fname" required></label>
                 <label class="top">Last Name*<input type="text" name="lname" required></label>
                 <label class="top">Email*<input type="email" name="email" placeholder="name@domain.com" required></label>
                 <label class="top">Phone Number*<input type="tel" name="phone" placeholder="123456789" required></label>
+                <label class="top">Message<textarea name="description" cols="30" rows="10"></textarea></label>
             </fieldset>
-            <fieldset>
-                <legend>Business Information</legend>
-                <label class="top">Business Name/Title*<input type="text" name="name" required></label>
-                <label class="top">Business Position/Title<input type="text" name="title" pattern="[A-Za-z -]{7,}"></label>
-                Minimum of 7 characters
-                <label class="top">Business Description<textarea name="description" cols="30" rows="10"></textarea></label>
-            </fieldset>
-            <fieldset>
-                <legend>Membership Level</legend>
-                <label class="sbs"><input type="radio" name="level" value="np membership"> NP Membership</label> 
-                For non-profit organizations and there is no fee.
-                <hr>
-                <label class="sbs"><input type="radio" name="level" value="bronze membership"> Bronze Membership</label>
-                RM5,000/year. For business looking for networking access to Chamber programming. If you want to participate in Chamber activities but do not need to promote your business through our marketing programmes, join at this level.
-                <hr>
-                <label class="sbs"><input type="radio" name="level" value="silver membership"> Silver Membership</label>
-                RM10,000/year. For business looking Chamber access AND marketing and promotional exposure. Benefit include eligible to place ads in the e-newsletter and on chamber spotlight page in the website.
-                <hr>
-                <label class="sbs"><input type="radio" name="level" value="gold membership"> Gold Membership</label>
-                RM15,000/year. For business looking for higher profile opportunity to market. Benefit include featured once annually on Chamber Facebook page, boosted to 26,000+ viewers in surrounding area and two free tickets to the Annual Awards event.
-            </fieldset>
-            <input type="hidden" id="date" name="date" value="CurrentTime">
-            <input type="hidden" id="time" name="time" value="CurrentDate">
-            <input type="submit" value="Join The Chamber" class="submitBtn">
+            <input type="submit" value="Send Message" class="submitBtn">
         </form>
-    </main>
+    </main>        
     <footer>
         <div class="sub-footer1">
             <img src="chamber/images/logo.webp" alt="logo">
@@ -103,6 +108,8 @@
     </footer>
     <script src="chamber/scripts/function.js"></script>
     <script src="chamber/scripts/currentdate.js"></script>
+    <script src="chamber/scripts/lazyload.js"></script>
+    <script src="chamber/scripts/localStorage.js"></script>
 </body>
 
 </html>

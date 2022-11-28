@@ -41,7 +41,7 @@
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
         <div class="date"></div>
@@ -49,8 +49,10 @@
     </header>
     <main>
         <h2>Membership Directory</h2>
-        <!-- <button class="sList">List &#8863</button>
-        <button class="sGrid">Grid &#8862</button> -->
+        <div id="btnContainer">
+            <button class="list">List</button>
+            <button class="grid" class="grid active">Grid</button>
+        </div>
         <div class="cards"></div>
     </main>        
     <footer>
@@ -58,16 +60,14 @@
             <img src="chamber/images/logo.webp" alt="logo">
             <div class="sub-footer2">
                 <p>Malaysia Chamber of Commerce</p>
-            </div>
-            <div>
-                <p>15 A, Jalan Rejang 8, <br>Taman Setapak Jaya<br>53300 Kuala Lumpur.</p>
+                <p>15 A, Jalan Rejang 8, Taman Setapak Jaya 53300 Kuala Lumpur.</p><br>
+                <a href="https://openweathermap.org/" target="_blank">Weather Data Source</a>
             </div>
             <div class="sub-footer3">
                 <p>malaysiachamber.com</p>
-                <p>60-126521214</p>
+                <p>60-126521214</p><br>
+                <a href="https://www.google.com/maps/place" target="_blank">Location Map</a>
             </div>
-            <div><a href="https://www.google.com/maps/place" target="_blank">Location Map</a></div>
-            <div><a href="https://openweathermap.org/" target="_blank">Weather Data Source</a></div>
         </div>
         <div class="copyright">
             <span>&copy; 2022 Malaysia Chamber of Commerce | Nikita Wong | WDD 230 Project | <span id="lastModified"></span></span>
@@ -76,8 +76,8 @@
     <script src="chamber/scripts/function.js"></script>
     <script src="chamber/scripts/currentdate.js"></script>
     <script src="chamber/scripts/lazyload.js"></script>
-    <script src="chamber/scripts/localStorage.js"></script>
     <script src="chamber/scripts/directory.js"></script>
+    <script src="chamber/scripts/button.js"></script>
 </body>
 
 </html>
