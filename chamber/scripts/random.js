@@ -25,15 +25,15 @@ fetch(requestURL)
     // console.log(specialCompany);
 
     getRandomCompanies(specialCompany);
-    function getRandomCompanies(array) {
-        const listOfRandomCompanies = array.sort(() => 0.5 - Math.random);
-        console.log(listOfRandomCompanies)
-        return listOfRandomCompanies.slice(0,3)
-    }
-    
 
     // companies.forEach(displayCompanies);
 });
+
+function getRandomCompanies(array) {
+    const listOfRandomCompanies = array.sort(() => 0.5 - Math.random);
+    console.log(listOfRandomCompanies)
+    return listOfRandomCompanies.slice(0,3)
+}
 
 function displayCompanies(company) {
     // Create elements to add to the document
