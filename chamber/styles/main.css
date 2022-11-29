@@ -438,6 +438,10 @@ div.cards img {
     max-width: 6rem;
 }
 
+div.column {
+    align-items: center;
+}
+
 /* ---------- list & grid view ---------- */
 div#btnContainer {
     background-color: white;
@@ -450,11 +454,11 @@ div#btnContainer {
     cursor: pointer;
 }
 
-.list:hover {
+button.list:hover {
     background-color: #ddd;
 }
 
-.grid:hover {
+button.grid:hover {
     background-color: #ddd;
 }
 
