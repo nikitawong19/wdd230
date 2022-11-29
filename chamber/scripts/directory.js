@@ -20,6 +20,7 @@ function displayCompanies(company) {
   let phone = document.createElement('p');
   let website = document.createElement('p');
   let portrait = document.createElement('img');
+  let membershipLevel = document.createElement('p');
   
   // Change the textContent property of the h3 element and others to contain the company's full name and etc.
   h3.textContent = `${company.name}`;
@@ -27,6 +28,7 @@ function displayCompanies(company) {
   address.textContent = `${company.address}`;
   phone.textContent = `${company.phone}`;
   website.textContent = `${company.website}`;
+  membershipLevel.textContent = `${company.membershipLevel}`;
   
   // Build the image attributes by using the setAttribute method for the src, alt, and loading attribute values.
   portrait.setAttribute('src', company.imageurl);
@@ -40,6 +42,7 @@ function displayCompanies(company) {
   card.appendChild(address);
   card.appendChild(phone);
   card.appendChild(website);
+  card.append(membershipLevel);
   card.classList.add('column');
 
   // Add/append the existing HTML div with the cards class with the section(card)
