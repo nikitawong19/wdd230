@@ -7,16 +7,16 @@
             "website": "www.intel.com",
             "phone": "04-253 8754",
             "imageurl": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/intel-256.png",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Gold Member"
         },
         {
             "name": "Yamaha Electronic Manufacturer (M) Sdn Bhd",
-            "description": "Manufacturing audio products",
+            "description": "Manufacturing audio products.",
             "address": "Plot 7, Kinta Free Industrial Zone (FTZ) Chemor Perak Malaysia",
             "website": "www.yamaha.com",
             "phone": "05-291 2111",
             "imageurl": "https://www.kindpng.com/picc/m/486-4869179_yamaha-electronic-manufacturing-sdn-bhd-chemor-perak-hd.png",
-            "membershipLevel": "Gold"
+            "membershipLevel": "Gold Member"
         },
         {
             "name": "Western Digital (Malaysia) Sdn Bhd",
@@ -25,7 +25,7 @@
             "website": "www.wdc.com",
             "phone": "03-7682 5740",
             "imageurl": "http://www.rw-designer.com/icon-image/6207-256x256x32.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "Bronze Member"
         },
         {
             "name": "Continental Tyre PJ Malaysia Sdn Bhd",
@@ -34,7 +34,7 @@
             "website": "www.conti-sime.com",
             "phone": "03-7787 8888",
             "imageurl": "https://www.carlogos.org/tire-logos/continental-logo-black-on-gold.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "Bronze Member"
         },
         {
             "name": "Sony EMCS (Malaysia) Sdn Bhd",
@@ -43,7 +43,7 @@
             "website": "www.sony.com",
             "phone": "03-8925 7887",
             "imageurl": "https://cdn4.iconfinder.com/data/icons/flat-brand-logo-2/512/sony-256.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver Member"
         },
         {
             "name": "AIA Berhad",
@@ -52,7 +52,7 @@
             "website": "www.aia.com.my",
             "phone": "03-2056 2993",
             "imageurl": "https://1000logos.net/wp-content/uploads/2020/09/AIA-Logo.png",
-            "membershipLevel": "Silver"
+            "membershipLevel": "Silver Member"
         },
         {
             "name": "Alila Hotel Bangsar",
@@ -61,7 +61,7 @@
             "website": "https://www.alilahotels.com/bangsar",
             "phone": "03-2268 3888",
             "imageurl": "https://searchlogovector.com/wp-content/uploads/2018/12/alila-bangsar-kuala-lumpur-logo-vector.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "Bronze Member"
         },
         {
             "name": "Federal Express Services (M) Sdn Bhd",
@@ -70,7 +70,7 @@
             "website": "www.fedex.com",
             "phone": "03-7720 6000",
             "imageurl": "https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/125_Fedex_logo_logos-256.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "Bronze Member"
         },
         {
             "name": "United States of America",
@@ -79,7 +79,7 @@
             "website": "https://my.usembassy.gov/",
             "phone": "03-2168 5000",
             "imageurl": "http://mylifechamp.com/wp-content/uploads/2014/11/2.-Organizer-2-US-Embassy.png",
-            "membershipLevel": "Bronze"
+            "membershipLevel": "Bronze Member"
         }
 
     ]
