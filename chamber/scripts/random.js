@@ -9,35 +9,47 @@ fetch(requestURL)
   })
   .then(function (jsonObject) {
     let companies = jsonObject['companies'];
+
+    // Add companies to a new list only if they are gold and silver members.
     let specialCompany = [];
     companies.forEach((company) => {
-        if (company.membershipLevel === 'Gold' || company.membershipLevel === 'Silver') {
+        if (company.membershipLevel === 'Gold Member' || company.membershipLevel === 'Silver Member') {
             specialCompany.push(company);
-        // Display 3 companies randomly
-        let randomCompanies = [];
-        // console.log(Math.floor(Math.random() * 3));
-        // randomCompanies.push(specialCompany[Math.floor(Math.random() * specialCompany.length)]);  // Use Math.random() function to get the random number between(0-1, 1 exclusive). Multiply it by the array length to get the numbers between(0-arrayLength). Use Math.floor() to get the index ranging from(0 to arrayLength-1).
-        // console.log(randomCompanies)
-        // randomCompanies.push(specialCompany[Math.floor(Math.random() * specialCompany.length)]);
-        // randomCompanies.push(specialCompany[Math.floor(Math.random() * specialCompany.length)]);
-        } 
-    })
-    // console.log(specialCompany);
+        }
+    });
+        // Add random companies to a new list.
+    let randomCompanies = [];
 
-    getRandomCompanies(specialCompany);
+    // Out of the gold and silver member companies, pick 3 randomly without repetition and add to a new list of random companies.
+    for (let i = 0; 0 < 3; i++) {
 
-    // companies.forEach(displayCompanies);
+        // Math.random() function is to get the random companies between(0-1, 1 exclusive). 
+        // Multiply it by the array length to get the numbers between(0-arrayLength). 
+        // Math.floor() function is to round down the number. 
+        // For example: 0.375 * 5 = 1.5 (round down to 1)
+        let randomCompany = specialCompany[Math.floor(Math.random() * specialCompany.length)]
+
+        randomCompanies.push(randomCompany);
+
+        // The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+        // Syntax: indexOf(searchElement) / indexOf(searchElement, fromIndex)
+        let index = specialCompany.indexOf(randomCompany);
+
+        // The splice() method is to remove or replace existing elements with new ones.
+        // First parameter indicate the start index where the splice operation starts. Second parameter indicate how many elements you want to remove from the array.
+        specialCompany.splice(index, 1); 
+    }
+    console.log(randomCompanies);
+
+    displayCompanies(randomCompanies[0], spotlight1);
+    displayCompanies(randomCompanies[1], spotlight2);
+    displayCompanies(randomCompanies[2], spotlight3);
 });
 
-function getRandomCompanies(array) {
-    const listOfRandomCompanies = array.sort(() => 0.5 - Math.random);
-    console.log(listOfRandomCompanies)
-    return listOfRandomCompanies.slice(0,3)
-}
-
-function displayCompanies(company) {
+function displayCompanies(company, spotlightDivNum) {
     // Create elements to add to the document
-    let card = document.createElement('div');
+    // let card = document.createElement('div');
+    let card = spotlightDivNum;
     let h3 = document.createElement('h3');
     let description = document.createElement('p');
     let address = document.createElement('p');
@@ -48,6 +60,7 @@ function displayCompanies(company) {
     // Change the textContent property of the h3 element and others to contain the company's full name and etc.
     h3.textContent = `${company.name}`;
     description.textContent = `${company.description}`;
+    description.classList.add('label')
     address.textContent = `${company.address}`;
     phone.textContent = `${company.phone}`;
     website.textContent = `${company.website}`;
@@ -65,7 +78,4 @@ function displayCompanies(company) {
     card.appendChild(phone);
     card.appendChild(website);
     card.classList.add('column');
-
-    // Add/append the existing HTML div with the cards class with the section(card)
-    document.querySelector('div.cards').appendChild(card);
 }
