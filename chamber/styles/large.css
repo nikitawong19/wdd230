@@ -70,14 +70,14 @@
 
     .welcome {
         position: absolute;
-        top: 32%;
-        left: 27%;
+        top: 38%;
+        left: 26%;
         color: black;
     }
     
-    .join {
+    button.joinChamberButton {
         position: absolute;
-        top: 40%;
+        top: 45%;
         left: 34%;
         background-color: black;
         color: white;
@@ -123,13 +123,11 @@
 
     /* ---------- spotlight 3 ---------- */
     .spotlight3 {
-        display: block;
         grid-column: 4 / 5;
         grid-row: 3 / 4;
-    }
-
-    .spotlight3 p {
-        padding: 0 15px 15px;
+        display: grid;
+        gap: 10px;
+        padding: 15px;
     }
 
     /* ---------- footer ---------- */

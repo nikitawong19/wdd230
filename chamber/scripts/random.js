@@ -4,46 +4,46 @@ const spotlight2 = document.querySelector('.spotlight2');
 const spotlight3 = document.querySelector('.spotlight3');
 
 fetch(requestURL)
-  .then(function (response) {
-    return response.json();
-  })
-  .then(function (jsonObject) {
-    let companies = jsonObject['companies'];
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (jsonObject) {
+        let companies = jsonObject['companies'];
 
-    // Add companies to a new list only if they are gold and silver members.
-    let specialCompany = [];
-    companies.forEach((company) => {
-        if (company.membershipLevel === 'Gold Member' || company.membershipLevel === 'Silver Member') {
-            specialCompany.push(company);
+        // Add companies to a new list only if they are gold and silver members.
+        let specialCompany = [];
+        companies.forEach((company) => {
+            if (company.membershipLevel === 'Gold Member' || company.membershipLevel === 'Silver Member') {
+                specialCompany.push(company);
+            }
+        });
+            // Add random companies to a new list.
+        let randomCompanies = [];
+
+        // Out of the gold and silver member companies, pick 3 randomly without repetition and add to a new list of random companies.
+        for (let i = 0; i < 3; i++) {
+
+            // Math.random() function is to get the random companies between(0-1, 1 exclusive). 
+            // Multiply it by the array length to get the numbers between(0-arrayLength). 
+            // Math.floor() function is to round down the number. 
+            // For example: 0.375 * 5 = 1.5 (round down to 1)
+            let randomCompany = specialCompany[Math.floor(Math.random() * specialCompany.length)]
+
+            randomCompanies.push(randomCompany);
+
+            // The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
+            // Syntax: indexOf(searchElement) / indexOf(searchElement, fromIndex)
+            let index = specialCompany.indexOf(randomCompany);
+
+            // The splice() method is to remove or replace existing elements with new ones.
+            // First parameter indicate the start index where the splice operation starts. Second parameter indicate how many elements you want to remove from the array.
+            specialCompany.splice(index, 1); 
         }
-    });
-        // Add random companies to a new list.
-    let randomCompanies = [];
+        console.log(randomCompanies);
 
-    // Out of the gold and silver member companies, pick 3 randomly without repetition and add to a new list of random companies.
-    for (let i = 0; 0 < 3; i++) {
-
-        // Math.random() function is to get the random companies between(0-1, 1 exclusive). 
-        // Multiply it by the array length to get the numbers between(0-arrayLength). 
-        // Math.floor() function is to round down the number. 
-        // For example: 0.375 * 5 = 1.5 (round down to 1)
-        let randomCompany = specialCompany[Math.floor(Math.random() * specialCompany.length)]
-
-        randomCompanies.push(randomCompany);
-
-        // The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present.
-        // Syntax: indexOf(searchElement) / indexOf(searchElement, fromIndex)
-        let index = specialCompany.indexOf(randomCompany);
-
-        // The splice() method is to remove or replace existing elements with new ones.
-        // First parameter indicate the start index where the splice operation starts. Second parameter indicate how many elements you want to remove from the array.
-        specialCompany.splice(index, 1); 
-    }
-    console.log(randomCompanies);
-
-    displayCompanies(randomCompanies[0], spotlight1);
-    displayCompanies(randomCompanies[1], spotlight2);
-    displayCompanies(randomCompanies[2], spotlight3);
+        displayCompanies(randomCompanies[0], spotlight1);
+        displayCompanies(randomCompanies[1], spotlight2);
+        displayCompanies(randomCompanies[2], spotlight3);
 });
 
 function displayCompanies(company, spotlightDivNum) {
@@ -60,7 +60,6 @@ function displayCompanies(company, spotlightDivNum) {
     // Change the textContent property of the h3 element and others to contain the company's full name and etc.
     h3.textContent = `${company.name}`;
     description.textContent = `${company.description}`;
-    description.classList.add('label')
     address.textContent = `${company.address}`;
     phone.textContent = `${company.phone}`;
     website.textContent = `${company.website}`;
@@ -77,5 +76,4 @@ function displayCompanies(company, spotlightDivNum) {
     card.appendChild(address);
     card.appendChild(phone);
     card.appendChild(website);
-    card.classList.add('column');
 }

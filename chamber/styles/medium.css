@@ -57,15 +57,15 @@
 
     .welcome {
         position: absolute;
-        top: 35%;
-        left: 35%;
+        top: 54%;
+        left: 33%;
         color: black;
     }
     
-    .join {
+    button.joinChamberButton {
         position: absolute;
-        top: 41%;
-        left: 40%;
+        top: 60%;
+        left: 38%;
         background-color: black;
         color: white;
         padding: 15px 20px;
@@ -95,6 +95,16 @@
         display: block;
         grid-column: 1 / 5;
         grid-row: 4 / 5;
+        text-align: center;
+    }
+
+    button.joinUsButton {
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+        padding: .75rem 1.5rem;
+        max-width: 20rem;
     }
 
     /* ---------- event box ---------- */
@@ -107,11 +117,6 @@
     div.weatherBox {
         grid-column: 3 / 5;
         grid-row: 5 / 6;
-    }
-    
-    /* ---------- spotlight 3 ---------- */
-    .spotlight3 {
-        display: none;
     }
     
     /* ---------- footer ---------- */
