@@ -107,6 +107,11 @@
         max-width: 20rem;
     }
 
+    button.joinUsButton a {
+        color: white;
+        text-decoration: none;
+    }
+
     /* ---------- event box ---------- */
     .eventBox {
         grid-column: 1 / 3;

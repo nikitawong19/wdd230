@@ -220,6 +220,11 @@ button.joinChamberButton {
     border-radius: 5px;
 }
 
+button.joinChamberButton a {
+    color: white;
+    text-decoration: none;
+}
+
 /* ---------- event ---------- */
 .eventBox {
     padding: 15px;
