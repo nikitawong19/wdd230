@@ -1,0 +1,294 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+header {
+    display: grid;
+    padding: 10px;
+    background-color: #7AC313;
+    align-items: center;
+}
+
+.logo img{
+    width: 30%;
+    height: auto;
+}
+
+/* ---------- Navigation ---------- */
+#hamburgerBtn {
+    margin: 0px;
+    background: transparent;
+    border: none; 
+    font-size: 2rem; 
+    display: block; /* When open the menu item it will display as block */
+    width:40px;
+    height: 40px;
+    align-self: center;
+    justify-self: end;
+    grid-column: 3 / 4;
+}
+
+nav {
+    grid-column: 1 / 4;
+    grid-row: 2;
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+}
+
+nav ul li a {
+    display: block; /* To make the entire width clickable */
+    padding: 15px 2vw; /* Make the clickable area bigger. 2vw is to align all the items to the left */
+    text-decoration: none; /* Remove underline */
+    color: black;
+}
+
+nav ul li a:hover {
+    background-color: #D2EC00;
+}
+
+/* Hide menu items in small screen */
+nav ul li {
+    display: none;
+}
+
+/* Display block when open menu items in small screen */
+nav ul.open li {
+    display: block;
+}
+
+/* ---------- Responsive Navigation ---------- */
+/* By default the hamburger which is the first span child to display as a bloack */
+#hamburgerBtn span:nth-child(1) {
+    display: block;
+}
+
+/* The second span child which is X to be hidden */
+#hamburgerBtn span:nth-child(2) {
+    display: none;
+}
+
+/* When the hamburger with the class is open, the first span child the hamburger to be hidden */
+#hamburgerBtn.open span:nth-child(1) {
+    display: none;
+}
+
+/* The second span child the X to display as a block */
+#hamburgerBtn.open span:nth-child(2) {
+    display: block;
+}
+
+/* ---------- Body ---------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- Main ---------- */
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center;
+    line-height: 1.5;
+    justify-content: center;
+}
+
+.fruits img {
+    width: 100%;
+    height: auto;
+}
+
+.sectionLA {
+    text-align: center;
+    margin: 1rem;
+}
+
+.sectionLA h1 {
+    margin: 0;
+}
+.sectionLA h2 {
+    margin: 1rem;
+}
+
+.buildMyDrinkButton {
+    margin-top: 1rem;
+    background-color: #7ac313;
+    color: white;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+button.joinChamberButton a {
+    color: white;
+    text-decoration: none;
+}
+
+/* ---------- Weather ---------- */
+div.sectionWeather {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    text-align: center;
+    align-items: center;
+    background-color: #f5f5ff;
+}
+
+div.sectionWeather p {
+    font-size: 30px;
+}
+
+img.weather-icon {
+    width: 20%;
+}
+
+hr {
+    grid-column: 1 / 3;
+    margin: 1rem;
+}
+
+figure {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+}
+
+/* ---------- Social Media ---------- */
+.socialMedia {
+    text-align: center;
+    padding: 1rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 55px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+/* ---------- Footer ---------- */
+footer {
+    background-color: #EBEBEB;
+}
+
+.sectionFooter {
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ---------- Fresh Page ---------- */
+.formMainTitle {
+    margin: 1rem;
+}
+
+form fieldset {
+    margin: 0 1rem 1rem 1rem;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+form legend {
+    color: blue;
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.top input {
+    display: block;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #eee;
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+}
+
+form button.submitBtn {
+    border: none;
+    background-color: #7AC313;
+    color: black;
+    border-radius: 5px;
+    padding: .75rem 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+    display: block;
+}
+
+.buildMyDrinkButton {
+    margin-top: 1rem;
+    background-color: #7ac313;
+    color: black;
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.message {
+    padding: 1rem 1rem 0 1rem;
+}
+
+/* ---------- About Us ---------- */
+.aboutUsMainTitle {
+    margin: 1rem;
+}
+
+.aboutUsDescription, .aboutUsWhyCarlsbad, .aboutUsAddress, .aboutUsContact, .aboutUsEmail {
+    margin: 1rem;
+}
+
+.aboutUsWhyCarlsbad h2, .aboutUsAddress h2, .aboutUsContact h2, .aboutUsEmail h2 {
+    margin: 1rem 1rem 1rem 0;
+}
+
+.aboutUsWhyCarlsbad {
+    background-color: #E4F9C8;
+    padding: 1rem;
+}
+
+.carlsbadImg img {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+}
+
+.aboutUsWallpaper img, .googleMap img {
+    width: 100%;
+    height: auto;
+}

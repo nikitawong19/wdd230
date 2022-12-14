@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Bar</title>
+    <meta name="description" content="WDD 230 Web Frontend Development I">
+    <link rel="shortcut icon" href="/finalProject/images/favicon1.ico">
+    <link href="/finalProject/styles/normalize.css" rel="stylesheet">
+    <link href="/finalProject/styles/small.css" rel="stylesheet">
+    <link href="/finalProject/styles/medium.css" rel="stylesheet">
+    <link href="/finalProject/styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- Icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <img src="/finalProject/images/logo.png" alt="juice bar logo">
+        </picture>
+
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="navigation">
+                <li><a href="/finalProject/home.html">Home</a></li>
+                <li><a href="/finalProject/fresh.html">Fresh</a></li>
+                <li><a href="/finalProject/aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="fruits">
+            <picture>
+                <source media="(max-width: 500px)" srcset="/finalProject/images/fruits-1280x853px-141kb-small.webp" width="1280" height="853">
+                <source media="(max-width: 700px)" srcset="/finalProject/images/fruits-1280x853px-146kb-medium.webp" width="1280" height="853">
+                <source media="(max-width: 800px)" srcset="/finalProject/images/fruits-1280x430px-167kb-large-crop.webp" width="1280" height="430">
+                <img src="/finalProject/images/placeholder.webp" data-src="/finalProject/images/fruits-1280x430px-167kb-large-crop.webp" alt="a picure showing many different fruits" width="1280" height="430">
+            </picture>
+        </div>
+        
+        <div class="sectionLA">
+            <h1>Be Healthy, Drink Healthy</h1>
+            <hr>
+            <h2>About Carlsbad</h2>
+            <p>Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach, backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach. The Legoland California theme park includes rides, a water park and the SEA LIFE Aquarium. The Flower Fields is a seasonal attraction, with acres of flowers. Set in a canyon, the Leo Carrillo Ranch Historic Park is home to free-roaming peacocks.</p>
+            <button class="buildMyDrinkButton" onclick="window.location.href = '/finalProject/fresh.html';">Build My Drink</button>
+        </div>
+        
+        <div class="sectionWeather">
+            <h2>Carlsbad, US</h2>
+            <hr>
+            <p><span class="current-temp"></span>&deg;F</p>
+            <figure>
+                <img src="https://openweathermap.org/img/w/04n.png" alt="icon of current weather condition" class="weather-icon">
+                <figcaption></figcaption>
+            </figure>
+            <hr>
+            <table>
+                <tr>
+                    <td>Humidity: <span class="humidity"></span>%</td>
+                </tr>
+                <tr>
+                    <td>Wind Speed: <span class="wind-speed"></span> m/s</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="socialMedia">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+        </div>
+        
+    </main>
+    <footer>
+        <div class="sectionFooter">
+            <div class="copyright">
+                <span>&copy; 2022 Juice Bar | Last Modified: <span id="lastModified"></span></span>
+            </div>
+        </div>
+    </footer>
+    <script src="/finalProject/scripts/hamburgerMenu.js"></script>
+    <script src="/finalProject/scripts/lastModified.js"></script>
+    <script src="/finalProject/scripts/weatherApi.js"></script>
+    <script src="/finalProject/scripts/lazyload.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Bar</title>
+    <meta name="description" content="WDD 230 Web Frontend Development I">
+    <link rel="shortcut icon" href="/finalProject/images/favicon1.ico">
+    <link href="/finalProject/styles/normalize.css" rel="stylesheet">
+    <link href="/finalProject/styles/small.css" rel="stylesheet">
+    <link href="/finalProject/styles/medium.css" rel="stylesheet">
+    <link href="/finalProject/styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <img src="/finalProject/images/logo.png" alt="juice bar logo">
+        </picture>
+
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="navigation">
+                <li><a href="/finalProject/home.html">Home</a></li>
+                <li><a href="/finalProject/fresh.html">Fresh</a></li>
+                <li><a href="/finalProject/aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="aboutUsMainTitle">About Juice Bar</h1>
+        <picture class="aboutUsWallpaper">
+            <source media="(max-width: 500px)" srcset="/finalProject/images/lemon-resized-1280x853px-48kb-small.webp" width="1280" height="853">
+            <source media="(max-width: 600px)" srcset="/finalProject/images/lemon-resized-1280x853px-107kb.webp" width="1280" height="853">
+            <source media="(max-width: 700px)" srcset="/finalProject/images/lemon-resized-1280x853px-107kb.webp" width="1280" height="853">
+            <img src="/finalProject/images/placeholder.webp" data-src="/finalProject/images/lemon-resized-1280x853px-107kb.webp" alt="a picure showing many different fruits" width="1280" height="853">
+        </picture>
+        
+        <div class="aboutUsDescription">
+            <p>After almost a decade of climbing the corporate ladder, Nick & Soraya decided to leave that world behind, and in 2009 they opened their very first Juice bar at Carlsbad, California. Since then they have expanded all over coastal area from Los Angeles to San Diego! Juice Bar is specializing in organic, locally grown foods. Their mission is to provide fresh and healthy food options, including organic, made to order, fruit drinks and fruit bags, to the local population and to tourists visiting the coastal areas.</p>
+        </div>
+        <div class="aboutUsWhyCarlsbad">
+            <h2>Why Carlsbad</h2>
+            <p>Carlsbad is a city near San Diego, in California. It's known for Tamarack Surf Beach, backed by the Carlsbad Sea Wall, and secluded South Carlsbad State Beach. The Legoland California theme park includes rides, a water park and the SEA LIFE Aquarium. The Flower Fields is a seasonal attraction, with acres of flowers. Set in a canyon, the Leo Carrillo Ranch Historic Park is home to free-roaming peacocks.</p>
+            <picture class="carlsbadImg">
+                <source media="(max-width: 500px)" srcset="/finalProject/images/carlsbad-960x1280px-144kb-small.webp" width="960" height="1280">
+                <source media="(max-width: 600px)" srcset="/finalProject/images/carlsbad-960x720px-176kb-medium.webp" width="960" height="720">
+                <source media="(max-width: 700px)" srcset="/finalProject/images/carlsbad-960x720px-176kb-medium.webp" width="960" height="720">
+                <img src="/finalProject/images/placeholder.webp" data-src="/finalProject/images/carlsbad-960x720px-176kb-medium.webp" alt="Carlsbad beach" width="960" height="720">
+            </picture>
+        </div>
+        <div class="aboutUsAddress">
+            <h2>Address</h2>
+            <p>400 S Main St Los Angeles, California(CA), 90013</p>
+        </div>
+        <div class="aboutUsContact">
+            <h2>Contact</h2>
+            <p>(213) 626-2471</p>
+        </div>
+        <div class="aboutUsEmail">
+            <h2>Email</h2>
+            <p>info.juicebar.com</p>
+        </div>
+        <picture class="googleMap">
+            <img src="/finalProject/images/googleMap.png" alt="">
+        </picture>
+    </main>
+    <footer>
+        <div class="sectionFooter">
+            <div class="copyright">
+                <span>&copy; 2022 Juice Bar | Last Modified: <span id="lastModified"></span></span>
+            </div>
+        </div>
+    </footer>
+    <script src="/finalProject/scripts/hamburgerMenu.js"></script>
+    <script src="/finalProject/scripts/lastModified.js"></script>
+    <script src="/finalProject/scripts/lazyload.js"></script>
+</body>
+</html>

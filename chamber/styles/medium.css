@@ -113,7 +113,7 @@
     }
 
     /* ---------- event box ---------- */
-    .eventBox {
+    .aboutLA {
         grid-column: 1 / 3;
         grid-row: 5 / 6;
     }

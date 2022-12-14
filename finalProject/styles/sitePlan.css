@@ -1,0 +1,122 @@
+* {
+	/* margin: 0;
+	padding: 0; */
+	box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- Header ---------- */
+header, footer {
+  background-color: gray;
+  color: white;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------- Navigation ---------- */
+nav { 
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+nav ul li {
+  flex: 1 1 auto;
+  list-style-type: none; /* Remove the bullet */
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+  padding: 15px;
+  color: white;
+}
+
+nav ul li a:hover {
+  border-bottom: 3px solid white;
+}
+
+/* ---------- Logo ---------- */
+picture.logo img {
+  width: 100px;
+  height: auto;
+}
+
+/* ---------- Wireframe ---------- */
+picture.wireframe img {
+  width: 90%;
+  height: auto;
+}
+
+/* ---------- Color Scheme ---------- */
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .colors th {
+    background-color: #999999;
+  }
+  
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+
+.primary {
+background-color: #ffffff;
+color: #141414;
+}
+
+.secondary {
+background-color: #F5F5F5;
+color: #141414;
+}
+
+.accent1 {
+background-color: #7AC313;
+color: white;
+}
+
+.accent2 {
+background-color: #D2EC00;
+color: #141414;
+}
+
+footer {
+  margin-top: 1rem;
+}
+/* ---------- Media queries for medium view ----------*/
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
+
+  /* ---------- navigation ---------- */
+  nav ul {
+      display: flex;
+      flex-direction: row;
+      margin-left: 2%;
+  }
+  }

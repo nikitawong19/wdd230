@@ -1,0 +1,110 @@
+/* ---------- Desktop view ---------- */
+@media only screen and (min-width:60em) {
+    /* ---------- Header ---------- */
+    .logo img {
+        width: 15%;
+        height: auto;
+    }
+
+    nav {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    /* Display side by side when in medium screen instead of block */
+    nav ul#navigation {
+        display: flex; /* To move right use "flex-end" */
+        justify-content: flex-end;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    /* Get rid of the hamburger icon when in medium screen */
+    #hamburgerBtn {
+        display: none;
+    }
+
+    /* ---------- Home Page ---------- */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+
+    .fruits img {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        width: 100%;
+        height: auto;
+    }
+
+    .sectionLA {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sectionWeather {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+
+    /* ---------- Fresh Page ---------- */
+    h1.formMainTitle {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    form {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        width: 100%;
+    }
+
+    /* ---------- About Us Page ---------- */
+    .aboutUsMainTitle {
+        grid-column: 2 / 4;
+        grid-row: 1 / 2;
+    }
+
+    .aboutUsDescription {
+        grid-column: 2 / 4;
+        grid-row: 2 / 3;
+        line-height: 1.5;
+    }
+
+    .aboutUsWallpaper {
+        grid-column: 2 / 4;
+        grid-row: 3 / 4;
+    }
+
+    .aboutUsWhyCarlsbad {
+        grid-column: 2 / 4;
+        grid-row: 4 / 5;
+        margin: 0;
+        line-height: 1.5;
+    }
+    .aboutUsAddress {
+        grid-column: 2 / 4;
+        grid-row: 5 / 6;
+        text-align: center;
+    }
+
+    .aboutUsContact {
+        grid-column: 2 / 4;
+        grid-row: 6 / 7;
+    }
+
+    .aboutUsEmail {
+        grid-column: 2 / 4;
+        grid-row: 7 / 8;
+    }
+
+    .googleMap {
+        grid-column: 2 / 4;
+        grid-row: 8 / 9;
+    }
+}

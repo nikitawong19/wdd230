@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juice Bar</title>
+    <meta name="description" content="WDD 230 Web Frontend Development I">
+    <link rel="shortcut icon" href="/finalProject/images/favicon1.ico">
+    <link href="/finalProject/styles/normalize.css" rel="stylesheet">
+    <link href="/finalProject/styles/small.css" rel="stylesheet">
+    <link href="/finalProject/styles/medium.css" rel="stylesheet">
+    <link href="/finalProject/styles/large.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <img src="/finalProject/images/logo.png" alt="juice bar logo">
+        </picture>
+
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+        <nav>
+            <ul id="navigation">
+                <li><a href="/finalProject/home.html">Home</a></li>
+                <li><a href="/finalProject/fresh.html">Fresh</a></li>
+                <li><a href="/finalProject/aboutUs.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="formMainTitle">Build Your Drink</h1>
+        <form id="form">
+            <fieldset>
+                <legend>Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="name@domain.com" required></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" placeholder="123456789" required></label>
+                <label class="top">Select 3 fruits</label>
+                <select id="fruitsSelection" name="select"><option value="pleaseSelect">Please Select</option></select>
+                <label class="top">Special Instructions<textarea name="description" cols="30" rows="10"></textarea></label>
+                <button type="submit" value="Build My Drink" class="submitBtn">Build My Drink</button>
+                <p class="message"></p>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="sectionFooter">
+            <div class="copyright">
+                <span>&copy; 2022 Juice Bar | Last Modified: <span id="lastModified"></span></span>
+            </div>
+        </div>
+    </footer>
+    <script src="/finalProject/scripts/hamburgerMenu.js"></script>
+    <script src="/finalProject/scripts/lastModified.js"></script>
+    <script src="/finalProject/scripts/submitButton.js"></script>
+</body>
+</html>
